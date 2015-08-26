@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  26 AUG 2015 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  26 AUG 2015 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -274,9 +274,6 @@ epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 400.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <11> on input line 400.
@@ -345,7 +342,7 @@ earch/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></home/md
 l/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on inis2015.pdf (3 pages, 81612 bytes).
+Output written on inis2015.pdf (3 pages, 81610 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
