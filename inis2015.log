@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  27 AUG 2015 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  27 AUG 2015 01:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,15 +320,9 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
 
-Underfull \hbox (badness 7558) in paragraph at lines 66--70
-[]\OT1/ptm/m/n/8 R. Pandey \OT1/ptm/m/it/8 et al.\OT1/ptm/m/n/8 , ``Tun-nel jun
-c-tion abrupt-ness, source ran-
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 66--70
-\OT1/ptm/m/n/8 dom dopant fluc-tu-a-tion and pbti in-duced vari-abil-ity anal-y
--sis of
+Underfull \hbox (badness 4120) in paragraph at lines 66--70
+\OT1/ptm/m/n/8 Dopant Fluc-tu-a-tion and PBTI In-duced Vari-abil-ity Anal-y-sis
+ of
  []
 
 )
@@ -359,19 +353,18 @@ Here is how much of TeX's memory you used:
 {/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/enc/dvips/base
 /8r.enc}</home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmmi6.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/mdl/ska130/Research/Tools/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/mdl/ska1
-30/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></home/mdl/ska130/Research/Tools/texlive/201
-5/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></home/mdl/ska130/Research/Tools
-/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></home/mdl/ska130/Res
-earch/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on inis2015.pdf (3 pages, 108006 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/mdl/ska130/Research/Tools/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/mdl/ska
+130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/t
+imes/utmb8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/
+type1/urw/times/utmbi8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></home/mdl/ska130/Research/Tools/texlive
+/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on inis2015.pdf (3 pages, 99159 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

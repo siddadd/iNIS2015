@@ -57,20 +57,20 @@ S.~Datta, H.~Liu, and V.~Narayanan, ``Tunnel \{FET\} technology: A reliability
   -- 874, 2014.
 
 \bibitem{Datta2015}
-N.~Agrawal, H.~Liu, R.~Arghavani, V.~Narayanan, and S.~Datta, ``Impact of
-  variation in nanoscale silicon and non-silicon finfets and tunnel fets on
-  device and sram performance,'' \emph{Electron Devices, IEEE Transactions on},
-  vol.~62, no.~6, pp. 1691--1697, June 2015.
+N.~Agrawal, H.~Liu, R.~Arghavani, V.~Narayanan, and S.~Datta, ``{Impact of
+  Variation in Nanoscale Silicon and Non-Silicon FinFETs and Tunnel FETs on
+  Device and SRAM Performance},'' \emph{Electron Devices, IEEE Transactions
+  on}, vol.~62, no.~6, pp. 1691--1697, June 2015.
 
 \bibitem{Rahul2015}
-R.~Pandey \emph{et~al.}, ``Tunnel junction abruptness, source random dopant
-  fluctuation and pbti induced variability analysis of
-  $gaas_{0.4}sb_{0.6}/in_{0.65}ga_{0.35}$ as heterojunction tunnel fets,''
-  \emph{IEEE International Electron Devices Meeting}, (Accepted) 2015.
+R.~Pandey \emph{et~al.}, ``{Tunnel Junction Abruptness, Source Random Dopant
+  Fluctuation and PBTI Induced Variability Analysis of
+  GaAs$_{0.4}$Sb$_{0.6}$/In$_{0.65}$Ga$_{0.35}$As Heterojunction Tunnel
+  FETs},'' \emph{IEEE International Electron Devices Meeting}, (Accepted) 2015.
 
 \bibitem{isca2014}
-L.~Chen and Z.~Zhang, ``Memguard: A low cost and energy efficient design to
-  support and enhance memory system reliability,'' in \emph{Computer
+L.~Chen and Z.~Zhang, ``{MemGuard: A low cost and energy efficient design to
+  support and enhance memory system reliability},'' in \emph{Computer
   Architecture (ISCA), 2014 ACM/IEEE 41st International Symposium on}, June
   2014, pp. 49--60.
 
