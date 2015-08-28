@@ -36,6 +36,30 @@ S.~Kestur \emph{et~al.}, ``{Emulating Mammalian Vision on Reconfigurable
   Hardware},'' in \emph{IEEE International Symposium on Field-Programmable
   Custom Computing Machines (FCCM)}, April 2012.
 
+\bibitem{giles1997}
+S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
+  Face Recognition},'' in \emph{Computer Vision and Pattern Recognition, 1996.
+  Proceedings CVPR '96, 1996 IEEE Computer Society Conference on}, Jun 1996,
+  pp. 217--222.
+
+\bibitem{NIPS2012}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``{ImageNet Classification with
+  Deep Convolutional Neural Networks},'' in \emph{Advances in Neural
+  Information Processing Systems 25}, 2012, pp. 1097--1105.
+
+\bibitem{Bengio2009}
+Y.~Bengio, ``{Learning Deep Architectures for AI}.''\hskip 1em plus 0.5em minus
+  0.4em\relax Now Publishers, 2009.
+
+\bibitem{DNNNature2015}
+Y.~LeCun, Y.~Bengio, and G.~Hinton, ``{Deep Learning},'' in \emph{Nature}, May
+  2015, pp. 436--444.
+
+\bibitem{Farabet2009}
+C.~Farabet, C.~Poulet, J.~Han, and Y.~LeCun, ``{CNP: An FPGA-based processor
+  for Convolutional Networks},'' in \emph{International Conference on Field
+  Programmable Logic and Applications (FPL)}, Aug 2009.
+
 \bibitem{CarrollAaronHeiser2010}
 A.~Carroll and G.~Heiser, ``{An Analysis of Power Consumption in a
   Smartphone},'' in \emph{Usenix Annual Technical Conference}, 2010.
@@ -52,7 +76,7 @@ S.~Liu, {Pattabiraman K.}, T.~Moscibroda, and B.~Zorn, ``{Flikker: Saving DRAM
   Refresh-power through Critical Data Partitioning},'' in \emph{ASLPOS}, 2011.
 
 \bibitem{Datta2014}
-S.~Datta, H.~Liu, and V.~Narayanan, ``Tunnel \{FET\} technology: A reliability
+S.~Datta, H.~Liu, and V.~Narayanan, ``Tunnel {FET} technology: A reliability
   perspective,'' \emph{Microelectronics Reliability}, vol.~54, no.~5, pp. 861
   -- 874, 2014.
 

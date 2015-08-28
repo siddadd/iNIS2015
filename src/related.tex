@@ -1,26 +1,19 @@
 
 Due to the capacity of human vision systems for highly complex processing at very low power, many brain-inspired algorithms and architectures have been proposed to emulate the human visual cortex.~\cite{Nere2011,Chen2014,Kestur2012}. %[YiranChen UPitt, Qingriu Syracuse, NEC CNN]. 
+
+Even though Convolutional Neural Networks (CNNs) were explored in the early 1990s for vision applicationsi~\cite{giles1997}, they have resurfaced again after a long hiatus and become extremely popular in the past couple of years. 
+This successful comeback can be attributed to two major phenomena:
+(1) the existence of large amount of data (needed to train the network well) with the evolution of the digital era, and (2) the development of 
+custom hardware (required for acceleration) now being used for CNNs. 
+
+In the ImageNet Large Scale Visual Recognition Challenge (ILSVRC)
+conducted in 2012, the winning team trained a CNN consisting of five convolutional and three fully-connected layers. Importantly, the depth of the CNN is critical to 
+its recognition capabilities since the authors found that removing any convolutional layer resulted in inferior performance~\cite{NIPS2012}. 
+
+More recent and advanced CNN architectures have 10 to 20 layers of Rectified Linear Units, hundreds of millions of weights, and billions of connections between units.
+The reader is pointed to ~\cite{Bengio2009} for insights on deep architectures in general and ~\cite{DNNNature2015} for CNN-based learning and their recent advances. 
+
+From a systems perspective, ~\cite{Farabet2009} mapped an earlier Convolutional Network based face-detection task onto custom hardware, 
+
 Most works in this domain have focused mainly on enhancing the performance and energy efficiency of the computational fabrics and do not address the inefficiencies of the main memory system. The memory system contributes between 10-30\% of the overall power of embedded video systems and mobile phones~\cite{CarrollAaronHeiser2010}. The increasing memory size in new generations of embedded systems and the use of stacked 3D architectures that increase on-chip temperatures have drawn increasing attention on reducing the memory refresh energy. Consequently, there have been sustained efforts to introduce new power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus Inversion in new memory standards such as DDR4~\cite{jedec-sdram-standards}.  
 Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}. Recently, a software approach, termed as \emph{Flikker} was proposed that relies on the user to annotate critical and non-critical parts~\cite{Liu2011}. It also allows refresh rates to be different for critical and non-critical sections of the memory and conserves the refresh energy. 
-
-In this work, we focus on the unique opportunities provided by real-time embedded video analytics applications for reducing memory refresh energy. The analysis is based on a real-time image detection and recognition system that has been emulated on an FPGA based platform which detects objects of interest using an attention algorithm. These objects can then be picked up from subsequent frames and classified. This system is useful in a range of end applications such as unmanned air-vehicles, security cameras and aids for the visually-impaired. In this paper, we make the following contributions with regard to reducing the memory refresh energy in such a system.
-\vspace{-0.1in}
-\begin{itemize}[leftmargin=*]
-\item We identify that in streaming data, the lifetime of some parts of the data are significantly less than the refresh periods of a DRAM and disable refresh in these parts of the memory. 
-%This is an enhancement to current techniques that reduce refresh times instead of completely shutting off the refresh in non-critical portions of the data. 
-%We are also able to eliminate refresh for portions of the memory that are guaranteed to be accessed within a specific time period due to the application specific nature of the embedded video system.
-\item We automatically recognize portions of an image as critical based on the saliency-recognition algorithms employed in vision algorithms and selectively refresh those portions.
- %This is in contrast to prior efforts that have focused on static methods such as manual annotations of critical and non-critical regions. 
-%For example~\cite{Liu2011} annotates the code and certain data structures such as pointers to list of frames as critical while considering the image data itself as non-critical. This approach limits the granularity of such annotations, especially when such criticality is data-driven. 
-In contrast, to~\cite{Liu2011} which statically annotates portions of the code and partitions them into critical and non-critical regions, our automated system can exploit both data dependent and task dependent information to identify salient regions within a single image frame. 
-%The human visual cortex filters a significant amount of the raw visual stimuli for further processing by using attention mechanisms to identify the salient parts of the input. 
-%The salient features are determined by a combination of the low-level features of the stimuli as well as the feedback from the visual task being performed by the person. 
-\item In embedded systems, the lifetimes of streaming data are significantly less than the refresh periods of a DRAM. This enables us to disable refresh in these parts of the memory and eliminate refresh for portions that are guaranteed to be accessed within a specific time period. We propose the underlying architecture to support such a visual pipeline with an optimized memory sub-system.
-\end{itemize}
-\vspace{-0.3cm}
-%The rest of this paper is organized as follows.
-%In Section~\ref{sec:background}, we provide an overview of the vision-based system and the accelerators that are employed in it. We also describe the memory hierarchy used in our system and the possible scope for improving the %performance and power efficiency.
-%Section~\ref{sec:architecture} describes our proposed architecture design and highlights the additions over a baseline system.
-%Section~\ref{sec:results} enumerates our experimental results along with the performance and energy benefits that our design provides. Finally, we conclude with Section~\ref{sec:conclusion}.
-
-
