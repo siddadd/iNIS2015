@@ -9,51 +9,53 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: library.bib
+Warning--string name "http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/46?e" is undefined
+--line 11 of file library.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Bengio2009
 
 Done.
-You've used 16 entries,
+You've used 19 entries,
             4024 wiz_defined-function locations,
-            1300 strings with 17622 characters,
-and the built_in function-call counts, 10190 in all, are:
-= -- 741
-> -- 236
+            1315 strings with 18121 characters,
+and the built_in function-call counts, 11366 in all, are:
+= -- 828
+> -- 257
 < -- 57
-+ -- 127
-- -- 44
-* -- 481
-:= -- 1500
-add.period$ -- 33
-call.type$ -- 16
-change.case$ -- 16
++ -- 137
+- -- 49
+* -- 526
+:= -- 1702
+add.period$ -- 39
+call.type$ -- 19
+change.case$ -- 19
 chr.to.int$ -- 141
-cite$ -- 17
-duplicate$ -- 790
-empty$ -- 995
-format.name$ -- 58
-if$ -- 2364
+cite$ -- 20
+duplicate$ -- 899
+empty$ -- 1125
+format.name$ -- 65
+if$ -- 2626
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 147
-newline$ -- 71
-num.names$ -- 15
-pop$ -- 398
+int.to.str$ -- 19
+missing$ -- 169
+newline$ -- 80
+num.names$ -- 18
+pop$ -- 459
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 793
+skip$ -- 887
 stack$ -- 0
-substring$ -- 345
-swap$ -- 545
+substring$ -- 348
+swap$ -- 601
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 16
+type$ -- 19
 warning$ -- 1
-while$ -- 34
-width$ -- 18
-write$ -- 157
-(There was 1 warning)
+while$ -- 37
+width$ -- 21
+write$ -- 180
+(There were 2 warnings)

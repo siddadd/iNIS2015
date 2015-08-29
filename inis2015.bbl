@@ -36,6 +36,11 @@ S.~Kestur \emph{et~al.}, ``{Emulating Mammalian Vision on Reconfigurable
   Hardware},'' in \emph{IEEE International Symposium on Field-Programmable
   Custom Computing Machines (FCCM)}, April 2012.
 
+\bibitem{HPCA2015}
+N.~Chandramoorthy \emph{et~al.}, ``{Exploring Architectural Heterogeneity in
+  Intelligent Vision Systems},'' in \emph{International Symposium on High
+  Performance Computer Architecture (HPCA)}, Feb 2015.
+
 \bibitem{giles1997}
 S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
   Face Recognition},'' in \emph{Computer Vision and Pattern Recognition, 1996.
@@ -46,6 +51,11 @@ S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``{ImageNet Classification with
   Deep Convolutional Neural Networks},'' in \emph{Advances in Neural
   Information Processing Systems 25}, 2012, pp. 1097--1105.
+
+\bibitem{XilinxCNN}
+XCell, ``{Machine Learning in the Cloud: Deep Neural Networks on FPGAs},''
+  Available:
+  \url{http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/46?e}.
 
 \bibitem{Bengio2009}
 Y.~Bengio, ``{Learning Deep Architectures for AI}.''\hskip 1em plus 0.5em minus
@@ -97,5 +107,9 @@ L.~Chen and Z.~Zhang, ``{MemGuard: A low cost and energy efficient design to
   support and enhance memory system reliability},'' in \emph{Computer
   Architecture (ISCA), 2014 ACM/IEEE 41st International Symposium on}, June
   2014, pp. 49--60.
+
+\bibitem{chen2015fast}
+C.~Chen and R.~Xiao, ``{A Fast Model for Analysis and Improvement of Gate-Level
+  Circuit Reliability},'' \emph{Integration, the VLSI Journal}, 2015.
 
 \end{thebibliography}

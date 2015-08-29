@@ -1,6 +1,12 @@
 
 Due to the capacity of human vision systems for highly complex processing at very low power, many brain-inspired algorithms and architectures have been proposed to emulate the human visual cortex.~\cite{Nere2011,Chen2014,Kestur2012}. %[YiranChen UPitt, Qingriu Syracuse, NEC CNN]. 
 
+%Architectures
+In ~\cite{HPCA2015}, the authors explored architectural heterogeniety by using customized data-flows for many vision-based applications targeted at retail, security, etc.
+
+%Applications
+
+%CNNs
 Even though Convolutional Neural Networks (CNNs) were explored in the early 1990s for vision applicationsi~\cite{giles1997}, they have resurfaced again after a long hiatus and become extremely popular in the past couple of years. 
 This successful comeback can be attributed to two major phenomena:
 (1) the existence of large amount of data (needed to train the network well) with the evolution of the digital era, and (2) the development of 
@@ -8,12 +14,15 @@ custom hardware (required for acceleration) now being used for CNNs.
 
 In the ImageNet Large Scale Visual Recognition Challenge (ILSVRC)
 conducted in 2012, the winning team trained a CNN consisting of five convolutional and three fully-connected layers. Importantly, the depth of the CNN is critical to 
-its recognition capabilities since the authors found that removing any convolutional layer resulted in inferior performance~\cite{NIPS2012}. 
+its recognition capabilities since the authors found that removing any convolutional layer resulted in inferior performance~\cite{NIPS2012}. This CNN would need
+more than 80 million operations and over 100,000 data transfers~\cite{XilinxCNN}.
 
 More recent and advanced CNN architectures have 10 to 20 layers of Rectified Linear Units, hundreds of millions of weights, and billions of connections between units.
 The reader is pointed to ~\cite{Bengio2009} for insights on deep architectures in general and ~\cite{DNNNature2015} for CNN-based learning and their recent advances. 
 
-From a systems perspective, ~\cite{Farabet2009} mapped an earlier Convolutional Network based face-detection task onto custom hardware, 
+From a systems perspective, ~\cite{Farabet2009} mapped an earlier Convolutional Network based face-detection task onto custom hardware. More recently, ~\cite{Chen2014} recently proposed an architecture for CNNs and Deep 
+Neural Networks (DNNs) that minimized memory transfers thus achieving high
+throughput with small area, power and energy footprint.
 
 Most works in this domain have focused mainly on enhancing the performance and energy efficiency of the computational fabrics and do not address the inefficiencies of the main memory system. The memory system contributes between 10-30\% of the overall power of embedded video systems and mobile phones~\cite{CarrollAaronHeiser2010}. The increasing memory size in new generations of embedded systems and the use of stacked 3D architectures that increase on-chip temperatures have drawn increasing attention on reducing the memory refresh energy. Consequently, there have been sustained efforts to introduce new power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus Inversion in new memory standards such as DDR4~\cite{jedec-sdram-standards}.  
 Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}. Recently, a software approach, termed as \emph{Flikker} was proposed that relies on the user to annotate critical and non-critical parts~\cite{Liu2011}. It also allows refresh rates to be different for critical and non-critical sections of the memory and conserves the refresh energy. 
