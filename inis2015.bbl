@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{syncnn}
+J.~Campbell and V.~Kazantsev, ``{Using an Embedded Vision Processor to Build an
+  Efficient Object Recognition System},'' in \emph{DesignWare IP White Papers},
+  May 2015.
+
 \bibitem{Nere2011}
 A.~Nere, A.~Hashmi, and M.~Lipasti, ``{Profiling Heterogeneous Multi-GPU
   Systems to Accelerate Cortically Inspired Learning Algorithms},'' in
