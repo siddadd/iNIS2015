@@ -6,6 +6,25 @@ Recently Freescale Semiconductor unveiled a vision system-on-chip - S32V - for a
 demanding better power efficiencies, improved performance and more powerful capabilities from the underlying technologies. Synopys recently launced 
 EV544 - a Convolutional Neural Network (CNN) based processor~\cite{syncnn}.
 
+\begin{figure}[!htb]
+\vspace{0pt}
+\centering
+\includegraphics[width=0.9\linewidth]{./figures/vision_apps_devices.png}
+\vspace{0pt}
+\caption{}
+\label{fig:iot}
+\vspace{0pt}
+\end{figure}
+
+Fig.~\ref{fig:iot} illstrates the interaction between compute devices and vision accelerators when targeting various applications. A common vision pipeline involves parsing the visual scene and extracting objects or regions of interest (RoIs). This is 
+carried out in the object detection stage. Once regions are extracted they are sent to a recognition stage to identify 
+what the object is. Having figured out whether the object is of interest, further options can be explored. For example, if the 
+object is a person, activity or pose estimation can be triggered. The application workload usually will decide the choice of 
+the compute device. For example, if a user is in a retail store and would like to use a smart visual-assist device, a 
+wearable small form-factor device would be ideal. However, if this is an automotive-assist system, a larger device may be 
+engaged. If a security application is being deployed at an airport, then a large server-scale architecture would be needed to
+handle the sheer volume of data being generated every minute. It should be noted that in all these applications, real-time is a necessary constraint that needs to be met by the underlying system.
+
 In the context of real-time vision applications, single-class object detection is a highly computationally intensive task.  
 To robustly detect an object
 in an image that may appear at arbitrary position and scale involves (1) extracting optimized features that aptly describe the object and (2) 
