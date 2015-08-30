@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  29 AUG 2015 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  30 AUG 2015 01:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,19 +306,20 @@ fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figures/vision_apps_devices.png>]) (./src/reliability.tex
-<./figures/MissingFigure.pdf, id=14, 307.1475pt x 300.12125pt>
-File: ./figures/MissingFigure.pdf Graphic file (type pdf)
+<./figures/PixelSensitivityAnalysis.pdf, id=14, 767.86874pt x 516.93124pt>
+File: ./figures/PixelSensitivityAnalysis.pdf Graphic file (type pdf)
 
-<use ./figures/MissingFigure.pdf>
-Package pdftex.def Info: ./figures/MissingFigure.pdf used on input line 12.
-(pdftex.def)             Requested size: 471.68657pt x 460.92879pt.
+<use ./figures/PixelSensitivityAnalysis.pdf>
+Package pdftex.def Info: ./figures/PixelSensitivityAnalysis.pdf used on input l
+ine 13.
+(pdftex.def)             Requested size: 250.52075pt x 166.42484pt.
 ) (./src/conclusion.tex)
 (./src/acknowledgements.tex) (./inis2015.bbl
 Underfull \hbox (badness 2556) in paragraph at lines 35--38
 []\OT1/ptm/m/n/8 T. Chen, J. Wang, Y. Chen, and O. Temam, ``Di-an-Nao : A
  []
 
-[2]
+[2 <./figures/PixelSensitivityAnalysis.pdf>]
 Underfull \hbox (badness 4120) in paragraph at lines 105--109
 \OT1/ptm/m/n/8 Dopant Fluc-tu-a-tion and PBTI In-duced Vari-abil-ity Anal-y-sis
  of
@@ -338,15 +339,15 @@ Before submitting the final camera ready copy, remember to:
 
 [3
 
- <./figures/MissingFigure.pdf>] (./inis2015.aux)
+] (./inis2015.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  2924 strings out of 493093
- 46972 string characters out of 6125629
- 114269 words of memory out of 5000000
+ 47041 string characters out of 6125629
+ 112269 words of memory out of 5000000
  6361 multiletter control sequences out of 15000+600000
  37389 words of font info for 73 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -362,10 +363,10 @@ imes/utmb8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmbi8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></home/mdl/ska130/Research/Tools/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on inis2015.pdf (3 pages, 311683 bytes).
+Output written on inis2015.pdf (3 pages, 306847 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

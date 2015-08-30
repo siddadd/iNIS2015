@@ -2,16 +2,17 @@
 
 Reliability is being explored at different layers of abstraction; from devices~\cite{Datta2014,Datta2015,Rahul2015} to memory~\cite{isca2014} to algorithms.
 At a circuit-level, ~\cite{chen2015fast} uses a conditional probability approach for modeling reliability in combinational circuits.
-In this section, we discuss the key design points of the pipeline.
-Figure~\ref{fig:sys_arch} illustrates the end-to-end system beginning with the PCIe host data interface.
 
-%System Architecture
-\begin{figure*}[htb!]
+\subsection{Reliability in Vision}
+Figure~\ref{fig:hmax_pixel_sensitivity} illustrates the resilience of HMAX to pixel errors.
+
+%HMAX Resilience
+\begin{figure}[htb!]
 \vspace{0pt}
 \centering
-\includegraphics[width=0.9\textwidth]{./figures/MissingFigure.pdf}
+\includegraphics[width=0.99\linewidth,trim={20 20 30 20}, clip]{./figures/PixelSensitivityAnalysis.pdf}
 \vspace{0pt}
-\caption{System Architecture mapped to an FPGA}\label{fig:sys_arch}
+\caption{HMAX resilience to errors. Six classes from CalTech101 were used.}\label{fig:hmax_pixel_sensitivity}
 \vspace{0pt}
-\end{figure*}
+\end{figure}
 
