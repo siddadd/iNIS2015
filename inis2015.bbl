@@ -117,4 +117,24 @@ L.~Chen and Z.~Zhang, ``{MemGuard: A low cost and energy efficient design to
 C.~Chen and R.~Xiao, ``{A Fast Model for Analysis and Improvement of Gate-Level
   Circuit Reliability},'' \emph{Integration, the VLSI Journal}, 2015.
 
+\bibitem{Liu2012}
+J.~Liu, B.~Jaiyen, R.~Veras, and O.~Mutlu, ``{RAIDR: Retention-Aware
+  Intelligent DRAM Refresh},'' in \emph{ISCA}, 2012.
+
+\bibitem{Stuecheli2010}
+J.~Stuecheli, D.~Kaseridis, H.~Hunter, and L.~John, ``{Elastic Refresh:
+  Techniques to Mitigate Refresh Penalties in High Density Memory},'' in
+  \emph{MICRO}, 2010.
+
+\bibitem{iccd2014}
+S.~Advani \emph{et~al.}, ``Refresh enabled video analytics (reva): Implications
+  on power and performance of dram supported embedded visual systems,'' in
+  \emph{Computer Design (ICCD), 2014 32nd IEEE International Conference on},
+  Oct 2014, pp. 501--504.
+
+\bibitem{Maashri2012a}
+A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
+  recognition},'' in \emph{DAC}.\hskip 1em plus 0.5em minus 0.4em\relax ACM
+  Press, 2012, p. 579.
+
 \end{thebibliography}

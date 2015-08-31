@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  30 AUG 2015 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  31 AUG 2015 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,15 +311,19 @@ File: ./figures/PixelSensitivityAnalysis.pdf Graphic file (type pdf)
 
 <use ./figures/PixelSensitivityAnalysis.pdf>
 Package pdftex.def Info: ./figures/PixelSensitivityAnalysis.pdf used on input l
-ine 13.
+ine 21.
 (pdftex.def)             Requested size: 250.52075pt x 166.42484pt.
-) (./src/conclusion.tex)
+
+
+LaTeX Warning: Reference `table:compute' on page 2 undefined on input line 33.
+
+) (./src/conclusion.tex [2 <./figures/PixelSensitivityAnalysis.pdf>])
 (./src/acknowledgements.tex) (./inis2015.bbl
 Underfull \hbox (badness 2556) in paragraph at lines 35--38
 []\OT1/ptm/m/n/8 T. Chen, J. Wang, Y. Chen, and O. Temam, ``Di-an-Nao : A
  []
 
-[2 <./figures/PixelSensitivityAnalysis.pdf>]
+
 Underfull \hbox (badness 4120) in paragraph at lines 105--109
 \OT1/ptm/m/n/8 Dopant Fluc-tu-a-tion and PBTI In-duced Vari-abil-ity Anal-y-sis
  of
@@ -337,19 +341,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[3] (./inis2015.aux)
 
-] (./inis2015.aux)
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2924 strings out of 493093
- 47041 string characters out of 6125629
- 112269 words of memory out of 5000000
- 6361 multiletter control sequences out of 15000+600000
- 37389 words of font info for 73 fonts, out of 8000000 for 9000
+ 2930 strings out of 493093
+ 47110 string characters out of 6125629
+ 115285 words of memory out of 5000000
+ 6366 multiletter control sequences out of 15000+600000
+ 38496 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  37i,10n,24p,897b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/enc/dvips/base
@@ -363,7 +368,7 @@ imes/utmb8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/
 type1/urw/times/utmbi8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></home/mdl/ska130/Research/Tools/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on inis2015.pdf (3 pages, 306836 bytes).
+Output written on inis2015.pdf (3 pages, 310103 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
