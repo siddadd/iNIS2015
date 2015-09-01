@@ -29,7 +29,9 @@ In this section we explore the potential savings in computational work needed to
 is passed through an image pyramid before computing the ``S1'' layer of HMAX. The original HMAX model uses a bicubic interpolation technique 
 to generate the image pyramid. In the embedded version, compute resources are very costly. Saving a few resources can result in being able to 
 fit a design in a particular form-factor or may cause the design to overflow into the next larger generation of devices. We explored the 
-capablity of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. The impact of this is that instead of 
+capablity of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. We used all 101 classes of CalTech101 
+for this purpose. It should be noted that using the original bicubic interpolation technique, we achieve 54\% accuracy on the said dataset. This is in confirmation with the results shown in ~\cite{Mutch2008}. 
+We then ran the experiment using bilinear interpolation and found that the accuracy drops by just 1\%. The impact of this is that instead of 
 44 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 
 results. 
 
