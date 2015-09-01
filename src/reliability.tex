@@ -32,3 +32,14 @@ fit a design in a particular form-factor or may cause the design to overflow int
 capablity of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. The impact of this is that instead of 
 44 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 
 results. 
+
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.3}
+\caption {Interpolation Tecniques}
+\label{table:compute}
+\begin{tabular}{lllll}
+ System & Algorithm & Accuracy & Resources\\\hline
+ HMAX	& Bicubic   & 54\% & 44\\\hline
+ HMAX   & Bilinear  & 53\% & 8\\\hline
+\end{tabular}
+\end{table}
