@@ -46,6 +46,12 @@ N.~Chandramoorthy \emph{et~al.}, ``{Exploring Architectural Heterogeneity in
   Intelligent Vision Systems},'' in \emph{International Symposium on High
   Performance Computer Architecture (HPCA)}, Feb 2015.
 
+\bibitem{violafccm}
+D.~Hefenbrock, J.~Oberg, N.~Thanh, R.~Kastner, and S.~Baden, ``{Accelerating
+  Viola-Jones Face Detection to FPGA-Level Using GPUs},'' in
+  \emph{Field-Programmable Custom Computing Machines (FCCM), 2010 18th IEEE
+  Annual International Symposium on}, May 2010, pp. 11--18.
+
 \bibitem{giles1997}
 S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
   Face Recognition},'' in \emph{Computer Vision and Pattern Recognition, 1996.
@@ -74,6 +80,10 @@ Y.~LeCun, Y.~Bengio, and G.~Hinton, ``{Deep Learning},'' in \emph{Nature}, May
 C.~Farabet, C.~Poulet, J.~Han, and Y.~LeCun, ``{CNP: An FPGA-based processor
   for Convolutional Networks},'' in \emph{International Conference on Field
   Programmable Logic and Applications (FPL)}, Aug 2009.
+
+\bibitem{DaDianNao}
+Y.~Chen \emph{et~al.}, ``{DaDianNao: A Machine-Learning Supercomputer},'' in
+  \emph{MICRO}, Dec 2014, pp. 609--622.
 
 \bibitem{CarrollAaronHeiser2010}
 A.~Carroll and G.~Heiser, ``{An Analysis of Power Consumption in a

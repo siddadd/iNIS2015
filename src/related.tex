@@ -5,6 +5,7 @@ Due to the capacity of human vision systems for highly complex processing at ver
 In ~\cite{HPCA2015}, the authors explored architectural heterogeniety by using customized data-flows for many vision-based applications targeted at retail, security, etc.
 
 %Applications
+In ~\cite{violafccm}, the authors accelerated a popular face-detection algorithm on GPUs.
 
 %CNNs
 Even though Convolutional Neural Networks (CNNs) were explored in the early 1990s for vision applicationsi~\cite{giles1997}, they have resurfaced again after a long hiatus and become extremely popular in the past couple of years. 
@@ -22,7 +23,8 @@ The reader is pointed to ~\cite{Bengio2009} for insights on deep architectures i
 
 From a systems perspective, ~\cite{Farabet2009} mapped an earlier Convolutional Network based face-detection task onto custom hardware. More recently, ~\cite{Chen2014} recently proposed an architecture for CNNs and Deep 
 Neural Networks (DNNs) that minimized memory transfers thus achieving high
-throughput with small area, power and energy footprint.
+throughput with small area, power and energy footprint. ~\cite{DaDianNao} furthered this by proposing a training and inference accelerator 
+capable of providing GPU-like bandwidth in ASIC-like power budgets.
 
 Most works in this domain have focused mainly on enhancing the performance and energy efficiency of the computational fabrics and do not address the inefficiencies of the main memory system. The memory system contributes between 10-30\% of the overall power of embedded video systems and mobile phones~\cite{CarrollAaronHeiser2010}. The increasing memory size in new generations of embedded systems and the use of stacked 3D architectures that increase on-chip temperatures have drawn increasing attention on reducing the memory refresh energy. Consequently, there have been sustained efforts to introduce new power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus Inversion in new memory standards such as DDR4~\cite{jedec-sdram-standards}.  
 Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}. Recently, a software approach, termed as \emph{Flikker} was proposed that relies on the user to annotate critical and non-critical parts~\cite{Liu2011}. It also allows refresh rates to be different for critical and non-critical sections of the memory and conserves the refresh energy. 
