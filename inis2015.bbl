@@ -151,6 +151,12 @@ A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
   recognition},'' in \emph{DAC}.\hskip 1em plus 0.5em minus 0.4em\relax ACM
   Press, 2012, p. 579.
 
+\bibitem{kesturdac}
+S.~Kestur, K.~Irick, S.~Park, A.~Al~Maashri, V.~Narayanan, and C.~Chakrabarti,
+  ``{An Algorithm-Architecture Co-Design Framework for Gridding Reconstruction
+  using FPGAs},'' in \emph{Design Automation Conference (DAC), 2011 48th
+  ACM/EDAC/IEEE}, June 2011, pp. 585--590.
+
 \bibitem{Mutch2008}
 J.~Mutch and D.~G. Lowe, ``{Object class recognition and localization using
   sparse features with limited receptive fields},'' \emph{IJCV}, 2008.
