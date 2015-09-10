@@ -12,6 +12,19 @@ authors looked at reducing refresh power on multimedia workloads. Recently, in ~
 real-time embedded vision applications, refresh power can dynamically be changed based on autonomously tagging data with logical labels.
 
 HMAX is a hierarchical visual object recognition model that has been used in various embedded real-time applications~\cite{Kestur2012, Maashri2012a}. In this work, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAMs when these images are stored.  
+
+%HMAX Expt
+\begin{figure*}[!htb]
+\centering
+\begin{tabular}{@{}c@{} @{}c@{}}
+\includegraphics[width=0.45\textwidth]{./figures/hmax_reliability_a.png} & \includegraphics[width=0.45\textwidth]{./figures/hmax_reliability_b.png}\\[\abovecaptionskip]
+\small (a) Baseline & \small (b) Noise
+\end{tabular}
+\vspace{1pt}
+\caption{HMAX resilience to errors. Six classes from CalTech101 were used.}
+\label{tab:hmax_reliability}
+\end{figure*}
+
 Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a function of the pixel errors introduced in each image.
 
 %HMAX Resilience

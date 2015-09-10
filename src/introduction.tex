@@ -14,7 +14,7 @@ neuroscience and robotics~\cite{spinnaker}.
 \centering
 \includegraphics[width=0.9\linewidth]{./figures/vision_apps_devices.png}
 \vspace{0pt}
-\caption{}
+\caption{An embedded vision system consisting of a detection-recognition-understanding pipeline. Regions of Interest (RoIs) are produced from the input visual scene in the detection stage. These RoIs are fed to a recognition system. Having classified these RoIs, more information can be harnessed using more complex vision processes for scene understanding.}
 \label{fig:iot}
 \vspace{0pt}
 \end{figure}
@@ -38,13 +38,12 @@ assist system, an approaching vehicle or a passing pedestrian needs to be detect
 with minimal latency, minimum false positives, and maximum accuracy. On the other hand, a wearable visual prosthesis device needs to augment the visual cognition of the user 
 in diverse and vastly unconstrained environments for extended periods of time.
 
-In this paper, we focus on xyz.
-To augment the next generation of wearables, we lay emphasis on abc.
 The main contributions of this paper are:
-%\vspace{-0.1in}
 \begin{itemize}
-\item We survey the state-of-the-art. 
-\item We exploit reliability. 
+\item To usher in the next wave of technology, we explore the current state-of-the-art in 
+embedded vision accelerators and lay emphasis on key insights when designing such accelerators.
+\item With scaling technology paving the way for approximate computing, we exploit an increasingly powerful property of most vision algorithms - reliability to noise. 
+We show that for an object recognition system, we can save upto X\% refresh power when using DRAMs for memory storage while maintaining a 1\% error bound on accuracy.
 \end{itemize}
 
 The rest of this paper is organized as follows:
