@@ -21,6 +21,29 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{marr}
+D.~Marr, ``{Early Processing of Visual Information},'' \emph{Philosophical
+  Transactions of the Royal Society of London. Series B: Biological Sciences},
+  vol. 275, no. 942, pp. 483--519, 1976.
+
+\bibitem{Mutch2008}
+J.~Mutch and D.~G. Lowe, ``{Object class recognition and localization using
+  sparse features with limited receptive fields},'' \emph{IJCV}, 2008.
+
+\bibitem{Bruce2006}
+N.~D.~B. Bruce and J.~K. Tsotsos, ``{Saliency Based on Information
+  Maximization},'' \emph{Advances in Neural Information Processing Systems},
+  vol.~18, pp. 155--162, 2006.
+
+\bibitem{Itti2001}
+L.~Itti and C.~Koch, ``{Computational Modelling of Visual Attention},''
+  \emph{Nature Reviews Neuroscience}, 2001.
+
+\bibitem{wyble2014}
+M.~Bay and B.~Wyble, ``{The Benefit of Attention is not Diminished when
+  Distributed Over Two Simultaneous Cues},'' \emph{Attention, Perception, and
+  Psychophysics}, vol.~76, no.~5, pp. 1287--1297, 2014.
+
 \bibitem{syncnn}
 J.~Campbell and V.~Kazantsev, ``{Using an Embedded Vision Processor to Build an
   Efficient Object Recognition System},'' in \emph{DesignWare IP White Papers},
@@ -29,6 +52,13 @@ J.~Campbell and V.~Kazantsev, ``{Using an Embedded Vision Processor to Build an
 \bibitem{spinnaker}
 S.~Furber, F.~Galluppi, S.~Temple, and L.~Plana, ``{The SpiNNaker Project},''
   \emph{Proceedings of the IEEE}, vol. 102, no.~5, pp. 652--665, May 2014.
+
+\bibitem{truenorth}
+A.~Cassidy \emph{et~al.}, ``Real-time scalable cortical computing at 46
+  giga-synaptic ops/watt with ~100x speedup in time-to-solution and ~100,000x
+  reduction in energy-to-solution,'' in \emph{High Performance Computing,
+  Networking, Storage and Analysis, SC14: International Conference for}, Nov
+  2014, pp. 27--38.
 
 \bibitem{Nere2011}
 A.~Nere, A.~Hashmi, and M.~Lipasti, ``{Profiling Heterogeneous Multi-GPU
@@ -141,10 +171,10 @@ J.~Stuecheli, D.~Kaseridis, H.~Hunter, and L.~John, ``{Elastic Refresh:
   \emph{MICRO}, 2010.
 
 \bibitem{iccd2014}
-S.~Advani \emph{et~al.}, ``Refresh enabled video analytics (reva): Implications
-  on power and performance of dram supported embedded visual systems,'' in
-  \emph{Computer Design (ICCD), 2014 32nd IEEE International Conference on},
-  Oct 2014, pp. 501--504.
+S.~Advani \emph{et~al.}, ``{Refresh Enabled Video Analytics (REVA):
+  Implications on Power and Performance of DRAM Supported Embedded Visual
+  Systems},'' in \emph{Computer Design (ICCD), 2014 32nd IEEE International
+  Conference on}, Oct 2014, pp. 501--504.
 
 \bibitem{Maashri2012a}
 A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
@@ -156,9 +186,5 @@ S.~Kestur, K.~Irick, S.~Park, A.~Al~Maashri, V.~Narayanan, and C.~Chakrabarti,
   ``{An Algorithm-Architecture Co-Design Framework for Gridding Reconstruction
   using FPGAs},'' in \emph{Design Automation Conference (DAC), 2011 48th
   ACM/EDAC/IEEE}, June 2011, pp. 585--590.
-
-\bibitem{Mutch2008}
-J.~Mutch and D.~G. Lowe, ``{Object class recognition and localization using
-  sparse features with limited receptive fields},'' \emph{IJCV}, 2008.
 
 \end{thebibliography}

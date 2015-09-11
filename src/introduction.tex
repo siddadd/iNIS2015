@@ -1,20 +1,30 @@
 %Introduction
 The workings of the brain have intrigued researchers across various spectrums of science - from neuroscience to computer science. While the cortex still remains 
-an enigma to the community, the visual cortex is a more finely understood system and many mathematical models mimicing the simple and complex cells that make up the 
-human visual system (HVS) have been proposed.
+an enigma to the community, the visual cortex is a more finely understood system and many mathematical models mimicing the 
+human visual system (HVS) have been proposed. Some of the early work in vision focused on understanding how primal capabilities of vision trigger higher modalities 
+such as object recognition~\cite{marr}. Progressively, object recogntion models based on the simple and complex cells in the cortex were developed~\cite{Mutch2008}. 
+To understand task-driven vision, attention models using salient features of 
+a visual scene were proposed~\cite{Bruce2006, Itti2001}. More recent work focuses on understanding the impact of attention under the influence of multiple cues~\cite{wyble2014}.
 
-Neuromorphic computing is now catching the eye of many semi-conductor companies too. Synopys recently launced 
-EV544 - a Convolutional Neural Network (CNN) based processor~\cite{syncnn}.
+%Motivate need for vision accelerators
+Most of these vision models are computationally intensive that require frequent accesses to memory due to large matrix operations 
+that run either in a feed-forward or an iterative manner. 
+Running these workloads in real-time is a necessary constraint that needs 
+to be met by the underlying system, but is becoming a daunting challenge with increasing resolutions of 
+display panels coupled with improved camera sensors.
 
+Given the challenges and opportunities in neuromorphic computing, many have embarked upon developing systems for smart vision applications. 
+Synopys recently launced EV544 - a Convolutional Neural Network (CNN) based processor~\cite{syncnn}.
 The SpiNNaker project has evolved from being a massively parallel representation of the human brain to now being used as a tool to further advance studies in 
-neuroscience and robotics~\cite{spinnaker}.
+neuroscience and robotics~\cite{spinnaker}. In a similar league, the True North chip~\cite{truenorth} meanders away from the traditional 
+von Neumann architecture and uses 4096 parallel and distributed cores is an event-driven framework for solving problems in vision and audition.
 
 \begin{figure}[!htb]
 \vspace{0pt}
 \centering
 \includegraphics[width=0.9\linewidth]{./figures/vision_apps_devices.png}
 \vspace{0pt}
-\caption{An embedded vision system consisting of a detection-recognition-understanding pipeline. Regions of Interest (RoIs) are produced from the input visual scene in the detection stage. These RoIs are fed to a recognition system. Having classified these RoIs, more information can be harnessed using more complex vision processes for scene understanding.}
+\caption{Interaction between a vision pipeline and the potential platforms to which it can be mapped depending on the application demands.}
 \label{fig:iot}
 \vspace{0pt}
 \end{figure}
@@ -26,17 +36,7 @@ object is a person, activity or pose estimation can be triggered. The applicatio
 the compute device. For example, if a user is in a retail store and would like to use a smart visual-assist device, a 
 wearable small form-factor device would be ideal. However, if this is an automotive-assist system, a larger device may be 
 engaged. If a security application is being deployed at an airport, then a large server-scale architecture would be needed to
-handle the sheer volume of data being generated every minute. It should be noted that in all these applications, real-time is a necessary constraint that needs to be met by the underlying system.
-
-In the context of real-time vision applications, object detection is a highly computationally intensive task.  
-To robustly detect an object
-in an image that may appear at arbitrary position and scale involves (1) extracting optimized features that aptly describe the object and (2) 
-searching the image in a sliding window fashion for the presence of particular configurations of the features that are indicative of the object's presence. 
-This exhaustive search is compounded by objects that exhibit high appearance variability in shape, color and size. 
-But, for visual-assist systems, the ability to perform such a task is imperative. For example, in a visual driving
-assist system, an approaching vehicle or a passing pedestrian needs to be detected
-with minimal latency, minimum false positives, and maximum accuracy. On the other hand, a wearable visual prosthesis device needs to augment the visual cognition of the user 
-in diverse and vastly unconstrained environments for extended periods of time.
+handle the sheer volume of data being generated every minute.
 
 The main contributions of this paper are:
 \begin{itemize}
@@ -50,5 +50,3 @@ The rest of this paper is organized as follows:
 In Section~\ref{sec:related}, we provide an overview of vision-based architectures and the corresponding state-of-the-art.
 Section~\ref{sec:reliability} describes a robust object recogntion pipeline.
 Finally, we conclude with Section~\ref{sec:conclusion}.
-
-
