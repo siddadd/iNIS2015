@@ -80,6 +80,12 @@ L.~Codrescu \emph{et~al.}, ``Hexagon dsp: An architecture optimized for mobile
   multimedia and communications,'' \emph{Micro, IEEE}, vol.~34, no.~2, pp.
   34--43, Mar 2014.
 
+\bibitem{micro2010}
+E.~Chung, P.~Milder, J.~Hoe, and K.~Mai, ``{Single-Chip Heterogeneous
+  Computing: Does the Future Include Custom Logic, FPGAs, and GPGPUs?}'' in
+  \emph{Microarchitecture (MICRO), 2010 43rd Annual IEEE/ACM International
+  Symposium on}, Dec 2010, pp. 225--236.
+
 \bibitem{Iyer2011}
 R.~Iyer \emph{et~al.}, ``{CogniServe: Heterogeneous Server Architecture for
   Large-Scale Recognition},'' \emph{Micro, IEEE}, May 2011.
@@ -109,6 +115,12 @@ A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
 S.~Bae \emph{et~al.}, ``{An FPGA Implementation of Information Theoretic
   Visual-Saliency System and Its Optimization},'' in \emph{IEEE International
   Symposium on Field-Programmable Custom Computing Machines (FCCM)}, May 2011.
+
+\bibitem{micro2008}
+A.~Mahesri, D.~Johnson, N.~Crago, and S.~Patel, ``{Tradeoffs in Designing
+  Accelerator Architectures for Visual Computing},'' in
+  \emph{Microarchitecture, 2008. MICRO-41. 2008 41st IEEE/ACM International
+  Symposium on}, Nov 2008, pp. 164--175.
 
 \bibitem{giles1997}
 S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for

@@ -1,13 +1,12 @@
 
 Due to the capacity of human vision systems for highly complex processing at very low power, many brain-inspired algorithms and architectures have been proposed to emulate the human visual cortex.~\cite{Nere2011,Chen2014,Kestur2012}. %[YiranChen UPitt, Qingriu Syracuse, NEC CNN]. 
 
-%DSPs
+%DSPs and Heterogenous Architectures
 Digital signal processors (DSPs) have been a universally accepted alternative to general purpose CPUs for seamless multimedia processing. 
 The Qualcomm Hexagon DSP instruction set architecture (ISA) contains numerous special-purpose instructions designed to accelerate key multimedia kernels such as 
-sliding window filtersi~\cite{hexagon}. Similarly, Texas Instruments has a heterogenous multi-core DSP targeted for real-time vision applications 
-based on their Keystone architecture.
-
-%Heterogenous Architectures
+sliding window filtersi~\cite{hexagon}. 
+Heterogeniety has often been considered as a viable solution to handle the increasingly varying nature of workloads that need to be run today~\cite{micro2010}.
+Texas Instruments has a heterogenous multi-core DSP targeted for real-time vision applications based on their Keystone architecture. 
 To tackle the diverse field of vision many other heterogenous architectures have been proposed that take advantage of 
 customized flows for regular systolic operations while
 using the traditional von Neumann architecture for handling control logic and other irregular data operations. A heterogenous server architecture consisting of 
@@ -16,7 +15,9 @@ In ~\cite{HPCA2015}, the authors explored architectural heterogeniety by using c
 security, etc.
 
 %Custom Accelerators
-Custom vision accelerators have shown to be extremely performance-friendly for computationaly intensive tasks such as face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object recognition~\cite{Maashri2012a} and object detection~\cite{Bae2011}.
+Most vision applications demand high throughput and 
+specialized accelerators have shown to be extremely performance-friendly for computationaly intensive tasks such as 
+face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object recognition~\cite{Maashri2012a} and object detection~\cite{Bae2011}. In ~\cite{micro2008}, the authors propose a benchmarking suite - VISBench (Visual, Interactive, Simulation Benchmarks) - and find that a MIMD rather than a SIMD architecture gives better performance.
 
 %CNNs
 Even though Convolutional Neural Networks (CNNs) were explored in the early 1990s for vision applications~\cite{giles1997}, they have resurfaced again after a long hiatus and become extremely popular in the past couple of years. 
