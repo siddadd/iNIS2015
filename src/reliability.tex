@@ -58,6 +58,18 @@ pyramid to make it scale invariant. For example, HMAX uses an image pyramid havi
 uses a bicubic interpolation technique 
 to generate the image pyramid. The input image is passed through this image pyramid before computing the ``S1'' layer of HMAX. 
 
+%Interpolation
+\begin{figure*}[!htb]
+\centering
+\begin{tabular}{@{}c@{} @{}c@{}}
+\includegraphics[width=0.4\textwidth]{./figures/bilinear.pdf} & \includegraphics[width=0.4\textwidth]{./figures/bilinear.pdf}\\[\abovecaptionskip]
+\small (a) Bilinear Interpolation & \small (b) Bicubic Interpolation
+\end{tabular}
+\vspace{1pt}
+\caption{Interpolation techniques.}
+\label{tab:interpolation}
+\end{figure*}
+
 Many architectures have been proposed to support linear 
 and non-linear interpolation techniques~\cite{kesturdac}.
 
