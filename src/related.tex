@@ -1,11 +1,22 @@
 
 Due to the capacity of human vision systems for highly complex processing at very low power, many brain-inspired algorithms and architectures have been proposed to emulate the human visual cortex.~\cite{Nere2011,Chen2014,Kestur2012}. %[YiranChen UPitt, Qingriu Syracuse, NEC CNN]. 
 
-%Architectures
-In ~\cite{HPCA2015}, the authors explored architectural heterogeniety by using customized data-flows for many vision-based applications targeted at retail, security, etc.
+%DSPs
+Digital signal processors (DSPs) have been a universally accepted alternative to general purpose CPUs for seamless multimedia processing. 
+The Qualcomm Hexagon DSP instruction set architecture (ISA) contains numerous special-purpose instructions designed to accelerate key multimedia kernels such as 
+sliding window filtersi~\cite{hexagon}. Similarly, Texas Instruments has a heterogenous multi-core DSP targeted for real-time vision applications 
+based on their Keystone architecture.
 
-%Applications
-In ~\cite{violafccm}, the authors accelerated a popular face-detection algorithm on GPUs.
+%Heterogenous Architectures
+To tackle the diverse field of vision many other heterogenous architectures have been proposed that take advantage of 
+customized flows for regular systolic operations while
+using the traditional von Neumann architecture for handling control logic and other irregular data operations. A heterogenous server architecture consisting of 
+many small cores for low power and high throughput coupled with custom hardware accelerators was designed in ~\cite{Iyer2011}.
+In ~\cite{HPCA2015}, the authors explored architectural heterogeniety by using customized data-flows for many vision-based applications targeted at retail, 
+security, etc.
+
+%Custom Accelerators
+Custom vision accelerators have shown to be extremely performance-friendly for computationaly intensive tasks such as face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object recognition~\cite{Maashri2012a} and object detection~\cite{Bae2011}.
 
 %CNNs
 Even though Convolutional Neural Networks (CNNs) were explored in the early 1990s for vision applications~\cite{giles1997}, they have resurfaced again after a long hiatus and become extremely popular in the past couple of years. 
@@ -25,6 +36,3 @@ From a systems perspective, ~\cite{Farabet2009} mapped an earlier Convolutional 
 Neural Networks (DNNs) that minimized memory transfers thus achieving high
 throughput with small area, power and energy footprint. ~\cite{DaDianNao} furthered this by proposing a training and inference accelerator 
 capable of providing GPU-like bandwidth in ASIC-like power budgets.
-
-Most works in this domain have focused mainly on enhancing the performance and energy efficiency of the computational fabrics and do not address the inefficiencies of the main memory system. The memory system contributes between 10-30\% of the overall power of embedded video systems and mobile phones~\cite{CarrollAaronHeiser2010}. The increasing memory size in new generations of embedded systems and the use of stacked 3D architectures that increase on-chip temperatures have drawn increasing attention on reducing the memory refresh energy. Consequently, there have been sustained efforts to introduce new power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus Inversion in new memory standards such as DDR4~\cite{jedec-sdram-standards}.  
-Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}. Recently, a software approach, termed as \emph{Flikker} was proposed that relies on the user to annotate critical and non-critical parts~\cite{Liu2011}. It also allows refresh rates to be different for critical and non-critical sections of the memory and conserves the refresh energy. 

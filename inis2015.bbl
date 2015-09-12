@@ -75,6 +75,15 @@ S.~Kestur \emph{et~al.}, ``{Emulating Mammalian Vision on Reconfigurable
   Hardware},'' in \emph{IEEE International Symposium on Field-Programmable
   Custom Computing Machines (FCCM)}, April 2012.
 
+\bibitem{hexagon}
+L.~Codrescu \emph{et~al.}, ``Hexagon dsp: An architecture optimized for mobile
+  multimedia and communications,'' \emph{Micro, IEEE}, vol.~34, no.~2, pp.
+  34--43, Mar 2014.
+
+\bibitem{Iyer2011}
+R.~Iyer \emph{et~al.}, ``{CogniServe: Heterogeneous Server Architecture for
+  Large-Scale Recognition},'' \emph{Micro, IEEE}, May 2011.
+
 \bibitem{HPCA2015}
 N.~Chandramoorthy \emph{et~al.}, ``{Exploring Architectural Heterogeneity in
   Intelligent Vision Systems},'' in \emph{International Symposium on High
@@ -85,6 +94,21 @@ D.~Hefenbrock, J.~Oberg, N.~Thanh, R.~Kastner, and S.~Baden, ``{Accelerating
   Viola-Jones Face Detection to FPGA-Level Using GPUs},'' in
   \emph{Field-Programmable Custom Computing Machines (FCCM), 2010 18th IEEE
   Annual International Symposium on}, May 2010, pp. 11--18.
+
+\bibitem{sips2014}
+A.~Suleiman and V.~Sze, ``{Energy-efficient HOG-based Object Detection at
+  1080HD 60 fps with Multi-Scale Support},'' in \emph{IEEE Workshop on Signal
+  Processing Systems}, Oct 2014.
+
+\bibitem{Maashri2012a}
+A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
+  recognition},'' in \emph{DAC}.\hskip 1em plus 0.5em minus 0.4em\relax ACM
+  Press, 2012, p. 579.
+
+\bibitem{Bae2011}
+S.~Bae \emph{et~al.}, ``{An FPGA Implementation of Information Theoretic
+  Visual-Saliency System and Its Optimization},'' in \emph{IEEE International
+  Symposium on Field-Programmable Custom Computing Machines (FCCM)}, May 2011.
 
 \bibitem{giles1997}
 S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
@@ -119,21 +143,6 @@ C.~Farabet, C.~Poulet, J.~Han, and Y.~LeCun, ``{CNP: An FPGA-based processor
 Y.~Chen \emph{et~al.}, ``{DaDianNao: A Machine-Learning Supercomputer},'' in
   \emph{MICRO}, Dec 2014, pp. 609--622.
 
-\bibitem{CarrollAaronHeiser2010}
-A.~Carroll and G.~Heiser, ``{An Analysis of Power Consumption in a
-  Smartphone},'' in \emph{Usenix Annual Technical Conference}, 2010.
-
-\bibitem{jedec-sdram-standards}
-``{JEDEC DDR3 and DDR4 SDRAM Standard},'' 2012.
-
-\bibitem{islped98}
-T.~Ohsawa, K.~Kai, and K.~Murakami, ``Optimizing the dram refresh count for
-  merged {DRAM/logic LSIs},'' in \emph{ISLPED}, 1998.
-
-\bibitem{Liu2011}
-S.~Liu, {Pattabiraman K.}, T.~Moscibroda, and B.~Zorn, ``{Flikker: Saving DRAM
-  Refresh-power through Critical Data Partitioning},'' in \emph{ASLPOS}, 2011.
-
 \bibitem{Datta2014}
 S.~Datta, H.~Liu, and V.~Narayanan, ``Tunnel {FET} technology: A reliability
   perspective,'' \emph{Microelectronics Reliability}, vol.~54, no.~5, pp. 861
@@ -161,6 +170,17 @@ L.~Chen and Z.~Zhang, ``{MemGuard: A low cost and energy efficient design to
 C.~Chen and R.~Xiao, ``{A Fast Model for Analysis and Improvement of Gate-Level
   Circuit Reliability},'' \emph{Integration, the VLSI Journal}, 2015.
 
+\bibitem{CarrollAaronHeiser2010}
+A.~Carroll and G.~Heiser, ``{An Analysis of Power Consumption in a
+  Smartphone},'' in \emph{Usenix Annual Technical Conference}, 2010.
+
+\bibitem{jedec-sdram-standards}
+``{JEDEC DDR3 and DDR4 SDRAM Standard},'' 2012.
+
+\bibitem{islped98}
+T.~Ohsawa, K.~Kai, and K.~Murakami, ``Optimizing the dram refresh count for
+  merged {DRAM/logic LSIs},'' in \emph{ISLPED}, 1998.
+
 \bibitem{Liu2012}
 J.~Liu, B.~Jaiyen, R.~Veras, and O.~Mutlu, ``{RAIDR: Retention-Aware
   Intelligent DRAM Refresh},'' in \emph{ISCA}, 2012.
@@ -170,16 +190,15 @@ J.~Stuecheli, D.~Kaseridis, H.~Hunter, and L.~John, ``{Elastic Refresh:
   Techniques to Mitigate Refresh Penalties in High Density Memory},'' in
   \emph{MICRO}, 2010.
 
+\bibitem{Liu2011}
+S.~Liu, {Pattabiraman K.}, T.~Moscibroda, and B.~Zorn, ``{Flikker: Saving DRAM
+  Refresh-power through Critical Data Partitioning},'' in \emph{ASLPOS}, 2011.
+
 \bibitem{iccd2014}
 S.~Advani \emph{et~al.}, ``{Refresh Enabled Video Analytics (REVA):
   Implications on Power and Performance of DRAM Supported Embedded Visual
   Systems},'' in \emph{Computer Design (ICCD), 2014 32nd IEEE International
   Conference on}, Oct 2014, pp. 501--504.
-
-\bibitem{Maashri2012a}
-A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
-  recognition},'' in \emph{DAC}.\hskip 1em plus 0.5em minus 0.4em\relax ACM
-  Press, 2012, p. 579.
 
 \bibitem{kesturdac}
 S.~Kestur, K.~Irick, S.~Park, A.~Al~Maashri, V.~Narayanan, and C.~Chakrabarti,

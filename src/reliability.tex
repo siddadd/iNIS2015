@@ -7,7 +7,22 @@ In this section, we evaluate the capabilities of a popular visual object recogni
 power and reduce computational load.
 
 \subsection{Power}
-Many previous works have looked at tackling the increasing refresh power in DRAMs~\cite{Liu2012, Stuecheli2010}. In ~\cite{Liu2011}, the 
+
+So far we have surveyed the landscape of vision systems that enhance the 
+performance and energy efficiency of the computational fabrics. 
+However, memory is an integral part of most systems today and contributes 
+between 10-30\% of the overall power of embedded video systems and 
+mobile phones~\cite{CarrollAaronHeiser2010}. 
+The increasing memory size in new generations of embedded systems and 
+the use of stacked 3D architectures that increase on-chip temperatures 
+have made researchers look at saving on memory refresh energy. 
+New power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus 
+Inversion have been introduced in new memory standards such as 
+DDR4~\cite{jedec-sdram-standards}.  
+
+Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}.  
+Many recent works have looked at tackling the increasing refresh power in other 
+different ways~\cite{Liu2012, Stuecheli2010}. In ~\cite{Liu2011}, the 
 authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that in 
 real-time embedded vision applications, refresh power can dynamically be changed based on autonomously tagging data with logical labels.
 
