@@ -122,6 +122,14 @@ A.~Mahesri, D.~Johnson, N.~Crago, and S.~Patel, ``{Tradeoffs in Designing
   \emph{Microarchitecture, 2008. MICRO-41. 2008 41st IEEE/ACM International
   Symposium on}, Nov 2008, pp. 164--175.
 
+\bibitem{OpenCV}
+OpenCV, \url{http://opencv.org/}.
+
+\bibitem{Everingham2010}
+M.~Everingham, L.~Van~Gool, C.~K.~I. Williams, J.~Winn, and A.~Zisserman,
+  ``{The Pascal Visual Object Classes (VOC) Challenge},'' \emph{International
+  Journal of Computer Vision}, June 2010.
+
 \bibitem{giles1997}
 S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
   Face Recognition},'' in \emph{Computer Vision and Pattern Recognition, 1996.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  13 SEP 2015 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  13 SEP 2015 17:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -828,18 +828,15 @@ map/pdftex.map}
 
 
  <./figures/vision_apps_devices.png>]) (./src/related.tex
-<./figures/facedetected.jpg, id=16, 501.875pt x 381.425pt>
+===== Image 'figures/face_fps' is up-to-date. ======
+<./figures/facedetected.jpg, id=17, 501.875pt x 381.425pt>
 File: ./figures/facedetected.jpg Graphic file (type jpg)
 
 <use ./figures/facedetected.jpg>
-Package pdftex.def Info: ./figures/facedetected.jpg used on input line 55.
+Package pdftex.def Info: ./figures/facedetected.jpg used on input line 92.
 (pdftex.def)             Requested size: 227.74333pt x 173.08885pt.
-
-===== Image 'figures/face_fps' is up-to-date. ======
-) (./src/reliability.tex
-Underfull \vbox (badness 1314) has occurred while \output is active []
-
- [2 <./figures/facedetected.jpg> <./figures/face_fps.pdf>]
+ [2 <./figures/face_fps.pdf> <./figures/facedetected.jpg>]) (./src/reliability.
+tex
 <./figures/hmax_reliability_a.png, id=33, 770.88pt x 578.16pt>
 File: ./figures/hmax_reliability_a.png Graphic file (type png)
 
@@ -888,20 +885,26 @@ Overfull \hbox (34.12369pt too wide) in paragraph at lines 103--103
 [] 
  []
 
-) (./src/conclusion.tex) (./src/acknowledgements.tex) [3] (./inis2015.bbl
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./src/conclusion.tex) [3] (./src/acknowledgements.tex) (./inis2015.bbl
 Underfull \hbox (badness 2556) in paragraph at lines 69--72
 []\OT1/ptm/m/n/8 T. Chen, J. Wang, Y. Chen, and O. Temam, ``Di-an-Nao : A
  []
 
 
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [4 <./figures/PixelSensitivityAnalysis.pdf> <./figures/hmax_reliability_a.png>
+ <./figures/hmax_reliability_b.png>]
 Underfull \hbox (badness 1629) in paragraph at lines 115--118
 \OT1/ptm/m/it/8 Sym-po-sium on Field-Programmable Cus-tom Com-put-ing Ma-chines
 
  []
 
-[4 <./figures/PixelSensitivityAnalysis.pdf> <./figures/hmax_reliability_a.png> 
-<./figures/hmax_reliability_b.png>]
-Underfull \hbox (badness 4120) in paragraph at lines 170--174
+
+Underfull \hbox (badness 4120) in paragraph at lines 178--182
 \OT1/ptm/m/n/8 Dopant Fluc-tu-a-tion and PBTI In-duced Vari-abil-ity Anal-y-sis
  of
  []
@@ -928,10 +931,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22583 strings out of 493093
- 577681 string characters out of 6125629
- 730289 words of memory out of 5000000
- 25636 multiletter control sequences out of 15000+600000
+ 22585 strings out of 493093
+ 577705 string characters out of 6125629
+ 731289 words of memory out of 5000000
+ 25638 multiletter control sequences out of 15000+600000
  40698 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,15n,83p,836b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -954,7 +957,7 @@ Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></home/mdl/ska1
 30/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></ho
 me/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on inis2015.pdf (5 pages, 1478110 bytes).
+Output written on inis2015.pdf (5 pages, 1479036 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

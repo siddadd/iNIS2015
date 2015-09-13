@@ -47,16 +47,14 @@ face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object re
 %\caption{Frames per second}
 %\label{fig:hog_fps}
 %\end{figure}
-
-%Face Detection
-\begin{figure}[htb!]
-\vspace{0pt}
-\centering
-\includegraphics[width=0.9\linewidth]{./figures/facedetected.jpg}
-\vspace{0pt}
-\caption{Image from PASCAL dataset. Face detection algorithm results}\label{fig:opencv_face_detection}
-\vspace{0pt}
-\end{figure}
+With increasing image resolutions, achieving real-time performance for vision applications is becoming exceedingly difficult. 
+As an example, we ran the multi-threaded Haar face detection algorithm from the latest 
+stable release of OpenCV (2.4.11)~\cite{OpenCV} using 
+a general purpose CPU (8 Core, Intel i7-4770 3.40 GHz,32 GB RAM, 60W) and compared the performance with 
+a Nvidia GeForce GTX590 GPU (1024 Cuda Cores, 3GB DDR5, 300 GBps, 365W). Figure~\ref{fig:face_fps} shows a comparison of the two across different image sizes.
+As can be seen, performance deteriorates by more than 75\% when running an HD image on the CPU.
+Figure~\ref{fig:opencv_face_detection} shows the faces detected when the algorithm was run on an image 
+from the popular PASCAL Visual Object Classes (VOC) Challenge dataset~\cite{Everingham2010}.
 
 \begin{figure}[!htb]
 \centering
@@ -85,6 +83,16 @@ face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object re
 \end{tikzpicture}
 \caption{Frames per second}
 \label{fig:face_fps}
+\end{figure}
+
+%Face Detection
+\begin{figure}[htb!]
+\vspace{0pt}
+\centering
+\includegraphics[width=0.9\linewidth]{./figures/facedetected.jpg}
+\vspace{0pt}
+\caption{Face detection algorithm results on an image from PASCAL dataset.}\label{fig:opencv_face_detection}
+\vspace{0pt}
 \end{figure}
 
 %CNNs

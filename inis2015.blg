@@ -9,6 +9,8 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: library.bib
+Warning--string name "http://opencv.org/" is undefined
+--line 4 of file library.bib
 Warning--string name "http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/46?e" is undefined
 --line 11 of file library.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
@@ -17,45 +19,45 @@ Warning--string name "http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/
 Warning--empty booktitle in Bengio2009
 
 Done.
-You've used 40 entries,
+You've used 42 entries,
             4024 wiz_defined-function locations,
-            1434 strings with 21701 characters,
-and the built_in function-call counts, 26105 in all, are:
-= -- 1973
-> -- 584
+            1442 strings with 21940 characters,
+and the built_in function-call counts, 26878 in all, are:
+= -- 2024
+> -- 609
 < -- 161
-+ -- 321
-- -- 107
-* -- 1213
-:= -- 3865
-add.period$ -- 82
-call.type$ -- 40
-change.case$ -- 40
++ -- 333
+- -- 113
+* -- 1240
+:= -- 3991
+add.period$ -- 85
+call.type$ -- 42
+change.case$ -- 41
 chr.to.int$ -- 387
-cite$ -- 41
-duplicate$ -- 2031
-empty$ -- 2468
-format.name$ -- 143
-if$ -- 6083
+cite$ -- 43
+duplicate$ -- 2101
+empty$ -- 2545
+format.name$ -- 150
+if$ -- 6253
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 370
-newline$ -- 143
-num.names$ -- 39
-pop$ -- 956
+int.to.str$ -- 42
+missing$ -- 386
+newline$ -- 149
+num.names$ -- 41
+pop$ -- 1002
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2032
+skip$ -- 2093
 stack$ -- 0
-substring$ -- 949
-swap$ -- 1447
+substring$ -- 950
+swap$ -- 1487
 text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 40
+type$ -- 42
 warning$ -- 1
-while$ -- 97
-width$ -- 42
-write$ -- 370
-(There were 2 warnings)
+while$ -- 99
+width$ -- 44
+write$ -- 384
+(There were 3 warnings)
