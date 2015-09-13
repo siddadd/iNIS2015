@@ -1,12 +1,17 @@
-%Architecture
-
+%Reliability
 Reliability is being explored at different layers of abstraction; from devices~\cite{Datta2014,Datta2015,Rahul2015} to memory~\cite{isca2014} to algorithms.
 At a circuit-level, ~\cite{chen2015fast} uses a conditional probability approach for modeling reliability in combinational circuits.
 
+\subsection{Introduction}
 In this section, we evaluate the capabilities of a popular visual object recognition algorithm - HMAX - and exploit the potential to save 
 power and reduce computational load.
 
-\subsection{Power}
+\subsection{HMAX}
+HMAX is a hierarchical visual object recognition model that has been used in various embedded real-time applications~\cite{Kestur2012, Maashri2012a}. 
+
+%HMAX Expt
+
+\subsection{Exploiting Resiliency for Power Benefits}
 
 So far we have surveyed the landscape of vision systems that enhance the 
 performance and energy efficiency of the computational fabrics. 
@@ -26,8 +31,6 @@ different ways~\cite{Liu2012, Stuecheli2010}. In ~\cite{Liu2011}, the
 authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that in 
 real-time embedded vision applications, refresh power can dynamically be changed based on autonomously tagging data with logical labels.
 
-HMAX is a hierarchical visual object recognition model that has been used in various embedded real-time applications~\cite{Kestur2012, Maashri2012a}. In this work, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAMs when these images are stored.  
-
 %HMAX Expt
 \begin{figure*}[!htb]
 \centering
@@ -40,6 +43,7 @@ HMAX is a hierarchical visual object recognition model that has been used in var
 \label{tab:hmax_reliability}
 \end{figure*}
 
+In this section, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAMs when these images are stored.  
 Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a function of the pixel errors introduced in each image.
 
 %HMAX Resilience
@@ -52,7 +56,7 @@ Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of
 \vspace{0pt}
 \end{figure}
 
-\subsection{Compute}
+\subsection{Exploiting Reseliency for Compute Benefits}
 Image reconstruction is an important processing technique in image processing and computer vision applications. Most object recognition algorithms use a multi-scale 
 pyramid to make it scale invariant. For example, HMAX uses an image pyramid having 11 scales (including base scale) with a scale factor of $2^{1/4}$ and 
 uses a bicubic interpolation technique 
@@ -66,7 +70,7 @@ to generate the image pyramid. The input image is passed through this image pyra
 \small (a) Bilinear Interpolation & \small (b) Bicubic Interpolation
 \end{tabular}
 \vspace{1pt}
-\caption{Interpolation techniques.}
+\caption{Interpolation techniques. In (a), four while in (b), 16 neighboring pixels are used for interpolation.}
 \label{tab:interpolation}
 \end{figure*}
 
@@ -105,11 +109,11 @@ capablity of HMAX to correctly recognize objects using bilinear interpolation in
 for this purpose. It should be noted that using the original bicubic interpolation technique, we achieve 54\% accuracy on the said dataset. This is in confirmation with the results shown in ~\cite{Mutch2008}. 
 We then ran the experiment using bilinear interpolation and found the impact of this is a 1\% loss in accuracy. Also, instead of 
 56 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 
-results. 
+results and the savings have a significant impact on area and performance of the accelerated system. 
 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
-\caption {Interpolation Tecniques}
+\caption {Impact of Interpolation Techniques}
 \label{table:compute}
 \centering
 \begin{tabular}{lllll}
