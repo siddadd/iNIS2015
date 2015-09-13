@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  12 SEP 2015 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  12 SEP 2015 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -135,6 +135,70 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
+(/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/amsmath/amsm
+ath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+
+(/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/amsmath/amst
+ext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/amsmath/amsg
+en.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen119
+))
+(/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/amsmath/amsb
+sy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen120
+)
+(/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/amsmath/amso
+pn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen121
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks17
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks18
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/algorithms/a
 lgorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -143,18 +207,18 @@ nment
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/float/float.
 sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count92
-\float@exts=\toks16
-\float@box=\box27
-\@float@everytoks=\toks17
-\@floatcapt=\box28
+\c@float@type=\count104
+\float@exts=\toks21
+\float@box=\box29
+\@float@everytoks=\toks22
+\@floatcapt=\box30
 )
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/base/ifthen.
 sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks18
-\c@algorithm=\count93
+\@float@every@algorithm=\toks23
+\c@algorithm=\count105
 )
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/algorithmicx
 /algpseudocode.sty
@@ -165,21 +229,21 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count94
-\c@ALG@rem=\count95
-\c@ALG@nested=\count96
-\ALG@tlm=\skip44
-\ALG@thistlm=\skip45
-\c@ALG@Lnr=\count97
-\c@ALG@blocknr=\count98
-\c@ALG@storecount=\count99
-\c@ALG@tmpcounter=\count100
-\ALG@tmplength=\skip46
+\c@ALG@line=\count106
+\c@ALG@rem=\count107
+\c@ALG@nested=\count108
+\ALG@tlm=\skip47
+\ALG@thistlm=\skip48
+\c@ALG@Lnr=\count109
+\c@ALG@blocknr=\count110
+\c@ALG@storecount=\count111
+\c@ALG@tmpcounter=\count112
+\ALG@tmplength=\skip49
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
+\Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./inis2015.aux
 
@@ -204,17 +268,17 @@ LaTeX Font Info:    ... okay on input line 352.
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/context/base/supp-
 pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen119
-\scratchbox=\box29
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen120
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count113
+\scratchdimen=\dimen128
+\scratchbox=\box31
+\nofMPsegments=\count114
+\nofMParguments=\count115
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count116
+\MPscratchDim=\dimen129
+\MPnumerator=\count117
+\makeMPintoPDFobject=\count118
+\everyMPtoPDFconversion=\toks25
 )
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/generic/oberdiek/p
 dftexcmds.sty
@@ -327,20 +391,30 @@ Package pdftex.def Info: ./figures/PixelSensitivityAnalysis.pdf used on input l
 ine 49.
 (pdftex.def)             Requested size: 250.52075pt x 166.42484pt.
  [2]
-<./figures/bilinear.pdf, id=22, 234.8775pt x 149.8097pt>
+<./figures/bilinear.pdf, id=23, 234.8775pt x 149.8097pt>
 File: ./figures/bilinear.pdf Graphic file (type pdf)
 
 <use ./figures/bilinear.pdf>
 Package pdftex.def Info: ./figures/bilinear.pdf used on input line 65.
-(pdftex.def)             Requested size: 209.63669pt x 133.70966pt.
-File: ./figures/bilinear.pdf Graphic file (type pdf)
- <use ./figures/bilinear.pdf>
-Package pdftex.def Info: ./figures/bilinear.pdf used on input line 65.
-(pdftex.def)             Requested size: 209.63669pt x 133.70966pt.
-)
-(./src/conclusion.tex) (./src/acknowledgements.tex) (./inis2015.bbl [3 <./figur
-es/PixelSensitivityAnalysis.pdf> <./figures/hmax_reliability_a.png> <./figures/
-hmax_reliability_b.png>]
+(pdftex.def)             Requested size: 157.23152pt x 100.2851pt.
+
+<./figures/bicubic.pdf, id=24, 386.94562pt x 311.66437pt>
+File: ./figures/bicubic.pdf Graphic file (type pdf)
+
+<use ./figures/bicubic.pdf>
+Package pdftex.def Info: ./figures/bicubic.pdf used on input line 65.
+(pdftex.def)             Requested size: 262.04987pt x 211.06819pt.
+
+Underfull \vbox (badness 4229) has occurred while \output is active []
+
+
+Overfull \hbox (34.12369pt too wide) in paragraph at lines 99--99
+[] 
+ []
+
+) (./src/conclusion.tex) [3 <./figures/PixelSensitivityAnalysis.pdf> <./figures
+/hmax_reliability_a.png> <./figures/hmax_reliability_b.png>]
+(./src/acknowledgements.tex) (./inis2015.bbl
 Underfull \hbox (badness 2556) in paragraph at lines 69--72
 []\OT1/ptm/m/n/8 T. Chen, J. Wang, Y. Chen, and O. Temam, ``Di-an-Nao : A
  []
@@ -352,12 +426,19 @@ Underfull \hbox (badness 1629) in paragraph at lines 115--118
  []
 
 
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+ [4 <./figures/bilinear.pdf> <./figures/bicubic.pdf
+
+pdfTeX warning: pdflatex (file ./figures/bicubic.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
 Underfull \hbox (badness 4120) in paragraph at lines 170--174
 \OT1/ptm/m/n/8 Dopant Fluc-tu-a-tion and PBTI In-duced Vari-abil-ity Anal-y-sis
  of
  []
 
-[4 <./figures/bilinear.pdf>])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -377,32 +458,36 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2968 strings out of 493093
- 47818 string characters out of 6125629
- 114373 words of memory out of 5000000
- 6399 multiletter control sequences out of 15000+600000
- 41269 words of font info for 77 fonts, out of 8000000 for 9000
+ 3575 strings out of 493093
+ 54953 string characters out of 6125629
+ 125724 words of memory out of 5000000
+ 6989 multiletter control sequences out of 15000+600000
+ 41776 words of font info for 78 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 37i,11n,24p,836b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,15n,24p,836b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/enc/dvips/base
 /8r.enc}</home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi6.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/mdl/ska130/Research/Tools/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/mdl/ska
-130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/mdl/ska130/Research/Tools/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/mdl/ska130/
-Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></home/
-mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a
-.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on inis2015.pdf (5 pages, 1246406 bytes).
+blic/amsfonts/cm/cmex10.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/mdl/ska130/Research/Tool
+s/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/mdl/s
+ka130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/mdl/ska130/Research/Tools/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/mdl/ska130
+/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/mdl/ska130/Research/Tools/texli
+ve/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></home/mdl/ska130/Research/
+Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></home/mdl/ska1
+30/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></ho
+me/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on inis2015.pdf (5 pages, 1356030 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 121 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 32 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

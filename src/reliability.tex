@@ -32,7 +32,7 @@ HMAX is a hierarchical visual object recognition model that has been used in var
 \begin{figure*}[!htb]
 \centering
 \begin{tabular}{@{}c@{} @{}c@{}}
-\includegraphics[width=0.45\textwidth]{./figures/hmax_reliability_a.png} & \includegraphics[width=0.45\textwidth]{./figures/hmax_reliability_b.png}\\[\abovecaptionskip]
+\includegraphics[width=0.45\linewidth]{./figures/hmax_reliability_a.png} & \includegraphics[width=0.45\linewidth]{./figures/hmax_reliability_b.png}\\[\abovecaptionskip]
 \small (a) Baseline & \small (b) Noise
 \end{tabular}
 \vspace{1pt}
@@ -62,7 +62,7 @@ to generate the image pyramid. The input image is passed through this image pyra
 \begin{figure*}[!htb]
 \centering
 \begin{tabular}{@{}c@{} @{}c@{}}
-\includegraphics[width=0.4\textwidth]{./figures/bilinear.pdf} & \includegraphics[width=0.4\textwidth]{./figures/bilinear.pdf}\\[\abovecaptionskip]
+\includegraphics[width=0.3\textwidth]{./figures/bilinear.pdf} & \includegraphics[width=0.5\textwidth]{./figures/bicubic.pdf}\\[\abovecaptionskip]
 \small (a) Bilinear Interpolation & \small (b) Bicubic Interpolation
 \end{tabular}
 \vspace{1pt}
@@ -73,22 +73,48 @@ to generate the image pyramid. The input image is passed through this image pyra
 Many architectures have been proposed to support linear 
 and non-linear interpolation techniques~\cite{kesturdac}.
 
+Given a pixel $I(x,y)$, an interpolated pixel $I'(x',y')$ using bilinear interpolation is given by ~(\ref{eq:1}). By definition, 
+this involves computing two linear interpolation in $x$ and $y$ directions and requires eight multiplications. 
+Figure~\ref{tab:interpolation}(a) illustrates an interpolated pixel using four neighboring pixels.
+
+\begin{equation}
+\begin{split}
+I'(x',y') = &I(x,y) \times (1-\Delta x) \times (1-\Delta y) +\\ 
+            &I(x+1,y) \times\Delta x \times (1-\Delta y) +\\ 
+            &I(x,y+1) \times (1-\Delta x) \times\Delta y +\\ 
+            &I(x+1,y+1) \times\Delta x \times\Delta y 
+\end{split}
+\label{eq:1}
+\end{equation}
+
+Using bicubic interpolation, the same interpolated pixel $I'(x',y')$ is given by ~(\ref{eq:2}) where 
+$R_c$ denotes a bicubic interpolation function. The computation requires 56 multiplications in all and Figure~\ref{tab:interpolation}(b) shows the interpolated pixel 
+using sixteen neighboring pixels.
+
+\begin{equation}
+\begin{split}
+I'(x',y')=\sum_{m=-1}^{2}\sum_{n=-1}^{2}I(x+m,y+n)R_c(m-\Delta x)R_c(-(n-\Delta y))
+\end{split}
+\label{eq:2}
+\end{equation}
+
 In this section we explore the potential savings in computational work needed to be done while not compromising on accuracy. 
 In the embedded version, compute resources are very costly. Saving a few resources can result in being able to 
 fit a design in a particular form-factor or may cause the design to overflow into the next larger generation of devices. We explored the 
 capablity of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. We used all 101 classes of CalTech101 
 for this purpose. It should be noted that using the original bicubic interpolation technique, we achieve 54\% accuracy on the said dataset. This is in confirmation with the results shown in ~\cite{Mutch2008}. 
 We then ran the experiment using bilinear interpolation and found the impact of this is a 1\% loss in accuracy. Also, instead of 
-44 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 
+56 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 
 results. 
 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \caption {Interpolation Tecniques}
 \label{table:compute}
+\centering
 \begin{tabular}{lllll}
- System & Algorithm & Accuracy & Resources\\\hline
- HMAX	& Bicubic   & 54\% & 44\\\hline
+ System & Algorithm & Accuracy & Multipliers\\\hline
+ HMAX	& Bicubic   & 54\% & 56\\\hline
  HMAX   & Bilinear  & 53\% & 8\\\hline
 \end{tabular}
 \end{table}
