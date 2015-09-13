@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  13 SEP 2015 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  13 SEP 2015 15:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**inis2015
-(./inis2015.tex
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(./IEEEtran.cls
+**\def\tikzexternalrealjob{inis2015}\input{inis2015}
+(./inis2015.tex (./IEEEtran.cls
 Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
 istensen
 -- Based on V1.7a by Michael Shell
@@ -478,8 +475,9 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/generic/pgf/fronte
 ndlayer/tikz/libraries/tikzexternalshared.code.tex))
-\openout3 = `inis2015.auxlock'.
+No auxiliary output files.
 
+\w@pgfexternal@auxout=\write4
 
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/pgfplots/pgf
 plots.sty
@@ -616,7 +614,6 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 ath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
-
 For additional information on amsmath, use the `?' option.
 
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/amsmath/amst
@@ -704,7 +701,6 @@ Package: algpseudocode
 (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/algorithmicx
 /algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
-
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count133
 \c@ALG@rem=\count134
@@ -718,17 +714,12 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip49
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-)
-(/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/url/url.sty
+) (/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/tex/latex/url/url.st
+y
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (./inis2015.aux
-
-LaTeX Warning: Label `sec:acknowledgements' multiply defined.
-
 )
-\openout1 = `inis2015.aux'.
-
+No file figures/face_fps.aux.
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 372.
 LaTeX Font Info:    ... okay on input line 372.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 372.
@@ -814,99 +805,53 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 420.
 (./src/abstract.tex) (./src/introduction.tex
+The command '\includegraphics [width=0.9\linewidth ]{./figures/vision_apps_devi
+ces.png}' has been optimized away. Use '/tikz/external/optimize=false' to disab
+le this.
+) (./src/related.tex
+A tikzpicture has been optimized away. Use '/tikz/external/optimize=false' to d
+isable this.
+\openout4 = `figures/face_fps.dpth'.
+
+Package pgfplots info on input line 69: Using 'lua backend=false' for axis: x c
+oord trafo unsupported.
+
 pdfTeX warning (Object streams): \pdfobjcompresslevel > 0 requires \pdfminorver
 sion > 4. Object streams disabled now.
-<./figures/vision_apps_devices.png, id=4, 642.7212pt x 324.7332pt>
-File: ./figures/vision_apps_devices.png Graphic file (type png)
+[2
 
-<use ./figures/vision_apps_devices.png>
-Package pdftex.def Info: ./figures/vision_apps_devices.png used on input line 2
-5.
-(pdftex.def)             Requested size: 227.74333pt x 115.06554pt.
- [1{/home/mdl/ska130/Research/Tools/texlive/2015/texmf-var/fonts/map/pdftex/upd
-map/pdftex.map}
+{/home/mdl/ska130/Research/Tools/texlive/2015/texmf-var/fonts/map/pdftex/updmap
+/pdftex.map}]) (./src/reliability.tex
+The command '\includegraphics [width=0.45\linewidth ]{./figures/hmax_reliabilit
+y_a.png}' has been optimized away. Use '/tikz/external/optimize=false' to disab
+le this.
+The command '\includegraphics [width=0.45\linewidth ]{./figures/hmax_reliabilit
+y_b.png}' has been optimized away. Use '/tikz/external/optimize=false' to disab
+le this.
 
+Overfull \hbox (305.128pt too wide) in paragraph at lines 37--42
+ [][] 
+ []
 
- <./figures/vision_apps_devices.png>]) (./src/related.tex
-<./figures/facedetected.jpg, id=16, 501.875pt x 381.425pt>
-File: ./figures/facedetected.jpg Graphic file (type jpg)
+The command '\includegraphics [width=0.99\linewidth ,trim={20 20 30 20}, clip]{
+./figures/PixelSensitivityAnalysis.pdf}' has been optimized away. Use '/tikz/ex
+ternal/optimize=false' to disable this.
+The command '\includegraphics [width=0.3\textwidth ]{./figures/bilinear.pdf}' h
+as been optimized away. Use '/tikz/external/optimize=false' to disable this.
+The command '\includegraphics [width=0.5\textwidth ]{./figures/bicubic.pdf}' ha
+s been optimized away. Use '/tikz/external/optimize=false' to disable this.
 
-<use ./figures/facedetected.jpg>
-Package pdftex.def Info: ./figures/facedetected.jpg used on input line 55.
-(pdftex.def)             Requested size: 227.74333pt x 173.08885pt.
+Overfull \hbox (305.128pt too wide) in paragraph at lines 68--73
+ [][] 
+ []
 
-===== Image 'figures/face_fps' is up-to-date. ======
-) (./src/reliability.tex
-Underfull \vbox (badness 1314) has occurred while \output is active []
-
- [2 <./figures/facedetected.jpg> <./figures/face_fps.pdf>]
-<./figures/hmax_reliability_a.png, id=33, 770.88pt x 578.16pt>
-File: ./figures/hmax_reliability_a.png Graphic file (type png)
-
-<use ./figures/hmax_reliability_a.png>
-Package pdftex.def Info: ./figures/hmax_reliability_a.png used on input line 38
-.
-(pdftex.def)             Requested size: 235.84328pt x 176.88109pt.
-
-<./figures/hmax_reliability_b.png, id=34, 770.88pt x 578.16pt>
-File: ./figures/hmax_reliability_b.png Graphic file (type png)
-
-<use ./figures/hmax_reliability_b.png>
-Package pdftex.def Info: ./figures/hmax_reliability_b.png used on input line 38
-.
-(pdftex.def)             Requested size: 235.84328pt x 176.88109pt.
-
-<./figures/PixelSensitivityAnalysis.pdf, id=35, 767.86874pt x 516.93124pt>
-File: ./figures/PixelSensitivityAnalysis.pdf Graphic file (type pdf)
-
-<use ./figures/PixelSensitivityAnalysis.pdf>
-Package pdftex.def Info: ./figures/PixelSensitivityAnalysis.pdf used on input l
-ine 53.
-(pdftex.def)             Requested size: 250.52075pt x 166.42484pt.
-
-
-pdfTeX warning: pdflatex (file ./figures/bilinear.pdf): PDF inclusion: found PD
-F version <1.5>, but at most version <1.4> allowed
-<./figures/bilinear.pdf, id=37, 234.8775pt x 149.8097pt>
-File: ./figures/bilinear.pdf Graphic file (type pdf)
-
-<use ./figures/bilinear.pdf>
-Package pdftex.def Info: ./figures/bilinear.pdf used on input line 69.
-(pdftex.def)             Requested size: 157.23152pt x 100.2851pt.
-
-
-pdfTeX warning: pdflatex (file ./figures/bicubic.pdf): PDF inclusion: found PDF
- version <1.5>, but at most version <1.4> allowed
-<./figures/bicubic.pdf, id=38, 386.94562pt x 311.66437pt>
-File: ./figures/bicubic.pdf Graphic file (type pdf)
-
-<use ./figures/bicubic.pdf>
-Package pdftex.def Info: ./figures/bicubic.pdf used on input line 69.
-(pdftex.def)             Requested size: 262.04987pt x 211.06819pt.
 
 Overfull \hbox (34.12369pt too wide) in paragraph at lines 103--103
 [] 
  []
 
-) (./src/conclusion.tex) (./src/acknowledgements.tex) [3] (./inis2015.bbl
-Underfull \hbox (badness 2556) in paragraph at lines 69--72
-[]\OT1/ptm/m/n/8 T. Chen, J. Wang, Y. Chen, and O. Temam, ``Di-an-Nao : A
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 115--118
-\OT1/ptm/m/it/8 Sym-po-sium on Field-Programmable Cus-tom Com-put-ing Ma-chines
-
- []
-
-[4 <./figures/PixelSensitivityAnalysis.pdf> <./figures/hmax_reliability_a.png> 
-<./figures/hmax_reliability_b.png>]
-Underfull \hbox (badness 4120) in paragraph at lines 170--174
-\OT1/ptm/m/n/8 Dopant Fluc-tu-a-tion and PBTI In-duced Vari-abil-ity Anal-y-sis
- of
- []
-
-)
+) (./src/conclusion.tex) (./src/acknowledgements.tex)
+No file figures/face_fps.bbl.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -918,45 +863,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./figures/bilinear.pdf> <./figures/bicubic.pdf
-
-pdfTeX warning: pdflatex (file ./figures/bicubic.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->] (./inis2015.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 22583 strings out of 493093
- 577681 string characters out of 6125629
- 730289 words of memory out of 5000000
- 25636 multiletter control sequences out of 15000+600000
- 40698 words of font info for 77 fonts, out of 8000000 for 9000
+ 23025 strings out of 493093
+ 591895 string characters out of 6125629
+ 730246 words of memory out of 5000000
+ 26103 multiletter control sequences out of 15000+600000
+ 30326 words of font info for 67 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,15n,83p,836b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,21n,100p,878b,2276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/enc/dvips/base
 /8r.enc}</home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/mdl/ska130/Research/Tool
-s/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/mdl/s
-ka130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i7.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/mdl/ska130/Research/Tools/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/mdl/ska130
-/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/mdl/ska130/Research/Tools/texli
-ve/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></home/mdl/ska130/Research/
-Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></home/mdl/ska1
-30/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></ho
-me/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on inis2015.pdf (5 pages, 1478110 bytes).
+blic/amsfonts/cm/cmr10.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on figures/face_fps.pdf (1 page, 23901 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 18 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

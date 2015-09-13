@@ -164,9 +164,29 @@
 % You can find documentation about the pdfTeX application at:
 % http://www.tug.org/applications/pdftex
 
-
-
-
+%SKA added packages
+\usepackage{tikz}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=figures/]
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+\pgfplotscreateplotcyclelist{my color}{%
+solid, every mark/.append style={solid, fill=myblue}, mark=*\\%
+solid, every mark/.append style={solid, fill=mygreen}, mark=square*\\%
+solid, every mark/.append style={solid, fill=myred}, mark=diamond*\\%
+solid, every mark/.append style={solid, fill=peru}, mark=triangle*\\%
+}
+\definecolor{bblue}{HTML}{4F81BD}
+\definecolor{rred}{HTML}{C0504D}
+\definecolor{ggreen}{HTML}{9BBB59}
+\definecolor{ppurple}{HTML}{9F4C7C}
+\definecolor{royalblue}{HTML}{4169E1}
+\definecolor{myred}{HTML}{F75B5B}
+\definecolor{mygreen}{HTML}{00AD6B}
+\definecolor{myblue}{HTML}{1E90FF}
+\definecolor{peru}{HTML}{CD853F}
+\usepackage{setspace}
+\pdfminorversion=4
 
 % *** MATH PACKAGES ***
 %

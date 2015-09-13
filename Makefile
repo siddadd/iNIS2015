@@ -7,15 +7,19 @@ FIGS = $(wildcard figures/*.pdf figures/*.png graphs/*.pdf graphs/*.png)
 
 $(PAPER).pdf: $(TEX) $(BIB) $(FIGS) IEEEtran.cls
 	echo $(FIGS)
-	pdflatex $(PAPER)
+	pdflatex -shell-escape $(PAPER)
+	#make -f results.makefile -j 2 
 	#latex $(PAPER)
 	bibtex $(PAPER)
-	pdflatex $(PAPER)
+	pdflatex -shell-escape $(PAPER)
 	#latex $(PAPER)
-	pdflatex $(PAPER)
+	pdflatex -shell-escape $(PAPER)
 	#latex $(PAPER)
 	#dvipdf $(PAPER).dvi
 
+figures:
+	pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname "figures/hog_fps" "\def\tikzexternalrealjob{$(PAPER)}\input{$(PAPER)}"	
+	pdflatex -shell-escape -halt-on-error -interaction=batchmode -jobname "figures/face_fps" "\def\tikzexternalrealjob{$(PAPER)}\input{$(PAPER)}"	
 clean:
 	rm -f *.aux *.bbl *.blg *.log *.out $(PAPER).pdf
 

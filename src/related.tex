@@ -19,6 +19,74 @@ Most vision applications demand high throughput and
 specialized accelerators have shown to be extremely performance-friendly for computationaly intensive tasks such as 
 face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object recognition~\cite{Maashri2012a} and object detection~\cite{Bae2011}. In ~\cite{micro2008}, the authors propose a benchmarking suite - VISBench (Visual, Interactive, Simulation Benchmarks) - and find that a MIMD rather than a SIMD architecture gives better performance.
 
+%\begin{figure}[!htb]
+%\centering
+%\tikzsetnextfilename{hog_fps}
+%\begin{tikzpicture}
+%\begin{axis}[
+%    ybar,    
+%    bar width=10pt,
+%    enlarge x limits=0.1,
+%    legend style={at={(0.5,-0.15)},
+%    anchor=north,legend columns=-1},
+%    ylabel={Frames per Second},
+%    ymin = 0,
+%    ymax = 40,
+%    xtick=data,
+%    %ytick=data,
+%    symbolic x coords={0, 720x576, 1280x720, 1440x1080, 1920x1080, 5},
+%    %nodes near coords,
+%    %nodes near coords align={vertical},
+%    ]
+%\addplot [style={fill=rred}] coordinates {(720x576,15.63) (1280x720,11.76) (1440x1080,6.67) (1920x1080,4.9)};
+%\addplot [style={fill=mygreen}] coordinates {(720x576,21.74) (1280x720,18.18) (1440x1080,14.49) (1920x1080,12.34)};
+%\addplot [royalblue,line legend, sharp plot, update limits=false] coordinates {(0,30) (5,30)};
+%\legend{CPU,GPU, Real-time}
+%\end{axis}
+%\end{tikzpicture}
+%\caption{Frames per second}
+%\label{fig:hog_fps}
+%\end{figure}
+
+%Face Detection
+\begin{figure}[htb!]
+\vspace{0pt}
+\centering
+\includegraphics[width=0.9\linewidth]{./figures/facedetected.jpg}
+\vspace{0pt}
+\caption{Image from PASCAL dataset. Face detection algorithm results}\label{fig:opencv_face_detection}
+\vspace{0pt}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+\tikzsetnextfilename{face_fps}
+\begin{tikzpicture}
+\begin{axis}[
+    ybar,    
+    bar width=10pt,
+    enlarge x limits=0.1,
+    legend style={at={(0.5,-0.15)},
+    anchor=north,legend columns=-1},
+    ylabel={Frames per Second},
+    ymin = 0,
+    ymax = 40,
+    xtick=data,
+    %ytick=data,
+    symbolic x coords={0, 720x576, 1280x720, 1440x1080, 1920x1080, 5},
+    %nodes near coords,
+    %nodes near coords align={vertical},
+    ]
+\addplot [style={fill=rred}] coordinates {(720x576,9.43) (1280x720,4.54) (1440x1080,2.61) (1920x1080,1.99)};
+\addplot [style={fill=mygreen}] coordinates {(720x576,30) (1280x720,30) (1440x1080,30) (1920x1080,30)};
+\addplot [royalblue,line legend, sharp plot, update limits=false] coordinates {(0,30) (5,30)};
+\legend{CPU,GPU, Real-time}
+\end{axis}
+\end{tikzpicture}
+\caption{Frames per second}
+\label{fig:face_fps}
+\end{figure}
+
 %CNNs
 Even though Convolutional Neural Networks (CNNs) were explored in the early 1990s for vision applications~\cite{giles1997}, they have resurfaced again after a long hiatus and become extremely popular in the past couple of years. 
 This successful comeback can be attributed to two major phenomena:
