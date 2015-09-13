@@ -17,19 +17,25 @@ So far we have surveyed the landscape of vision systems that enhance the
 performance and energy efficiency of the computational fabrics. 
 However, memory is an integral part of most systems today and contributes 
 between 10-30\% of the overall power of embedded video systems and 
-mobile phones~\cite{CarrollAaronHeiser2010}. 
-The increasing memory size in new generations of embedded systems and 
-the use of stacked 3D architectures that increase on-chip temperatures 
-have made researchers look at saving on memory refresh energy. 
+mobile phones~\cite{CarrollAaronHeiser2010}. With the growing demand for cloud storage, large DRAM devices are becoming ubiquitous today. The increasing memory 
+size has made DRAM memory refresh energy a matter of growing concern. 
 New power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus 
-Inversion have been introduced in new memory standards such as 
-DDR4~\cite{jedec-sdram-standards}.  
+Inversion have been introduced in new memory standards such as DDR4~\cite{jedec-sdram-standards}.  
 
 Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}.  
 Many recent works have looked at tackling the increasing refresh power in other 
 different ways~\cite{Liu2012, Stuecheli2010}. In ~\cite{Liu2011}, the 
 authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that in 
 real-time embedded vision applications, refresh power can dynamically be changed based on autonomously tagging data with logical labels.
+
+In this section, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAM-based memory storage.  
+As shown in Fig.~\ref{tab:hmax_reliability}(a), we choose six classes from the CalTech101 dataset~\cite{Fergus2004} 
+and obtain a recognition accuracy of around 78\%. Next we introduce salt and pepper noise into 128 pixels of each testing image 
+as shown in Fig.~\ref{tab:hmax_reliability}(b). This noise corresponds to 1024 cell failures in a 32GB DRAM device~\cite{Liu2012}. 
+We find that the accuracy drops by less than 1\%. Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a 
+function of the pixel errors introduced in each image. We find that HMAX is resilient to up to 512 pixel errors after which there is a roll-off in accuracy. 
+We also inspected the accuracy function for each of the six classes independently and found that each class had its own sensitivity curve. This observation suggests 
+that having a data-dependent differential refresh scheme as proposed in ~\cite{iccd2014} would help in reducing refresh energy.
 
 %HMAX Expt
 \begin{figure*}[!htb]
@@ -42,9 +48,6 @@ real-time embedded vision applications, refresh power can dynamically be changed
 \caption{HMAX resilience to errors. Six classes from CalTech101 were used.}
 \label{tab:hmax_reliability}
 \end{figure*}
-
-In this section, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAMs when these images are stored.  
-Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a function of the pixel errors introduced in each image.
 
 %HMAX Resilience
 \begin{figure}[htb!]

@@ -220,6 +220,13 @@ S.~Advani \emph{et~al.}, ``{Refresh Enabled Video Analytics (REVA):
   Systems},'' in \emph{Computer Design (ICCD), 2014 32nd IEEE International
   Conference on}, Oct 2014, pp. 501--504.
 
+\bibitem{Fergus2004}
+R.~Fergus and P.~Perona, ``{Learning Generative Visual Models from Few Training
+  Examples: An Incremental Bayesian Approach Tested on 101 Object
+  Categories},'' in \emph{IEEE Conference on Computer Vision and Pattern
+  Recognition Workshop on Generative-Model Based Vision}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Ieee, 2004, pp. 178--178.
+
 \bibitem{kesturdac}
 S.~Kestur, K.~Irick, S.~Park, A.~Al~Maashri, V.~Narayanan, and C.~Chakrabarti,
   ``{An Algorithm-Architecture Co-Design Framework for Gridding Reconstruction
