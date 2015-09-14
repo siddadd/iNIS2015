@@ -32,10 +32,15 @@ In this section, we explore the resiliency of HMAX to bit errors that can then b
 As shown in Fig.~\ref{tab:hmax_reliability}(a), we choose six classes from the CalTech101 dataset~\cite{Fergus2004} 
 and obtain a recognition accuracy of around 78\%. Next we introduce salt and pepper noise into 128 pixels of each testing image 
 as shown in Fig.~\ref{tab:hmax_reliability}(b). This noise corresponds to 1024 cell failures in a 32GB DRAM device~\cite{Liu2012}. 
-We find that the accuracy drops by less than 1\%. Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a 
-function of the pixel errors introduced in each image. We find that HMAX is resilient to up to 512 pixel errors after which there is a roll-off in accuracy. 
+We find that the accuracy drops by less than 1\%. 
+This implies that the refresh period can be increased from 64ms to 256ms for a 32GB DRAM device, thus helping in 
+reducing the refresh energy.
+
+Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a 
+function of the pixel errors introduced in each image.
+We find that HMAX is resilient to up to 512 pixel errors after which there is a roll-off in accuracy. 
 We also inspected the accuracy function for each of the six classes independently and found that each class had its own sensitivity curve. This observation suggests 
-that having a data-dependent differential refresh scheme as proposed in ~\cite{iccd2014} would help in reducing refresh energy.
+that having a data-dependent differential refresh scheme as proposed in ~\cite{iccd2014} would help in further reducing refresh energy.
 
 %HMAX Expt
 \begin{figure*}[!htb]

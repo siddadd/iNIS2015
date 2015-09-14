@@ -50,9 +50,11 @@ face detecion ~\cite{violafccm}, pedestrian detection~\cite{sips2014}, object re
 With increasing image resolutions, achieving real-time performance for vision applications is becoming exceedingly difficult. 
 As an example, we ran the multi-threaded Haar face detection algorithm from the latest 
 stable release of OpenCV (2.4.11)~\cite{OpenCV} using 
-a general purpose CPU (8 Core, Intel i7-4770 3.40 GHz,32 GB RAM, 60W) and compared the performance with 
-a Nvidia GeForce GTX590 GPU (1024 Cuda Cores, 3GB DDR5, 300 GBps, 365W). Figure~\ref{fig:face_fps} shows a comparison of the two across different image sizes.
-As can be seen, performance deteriorates by more than 75\% when running an HD image on the CPU.
+a general purpose CPU (8 Core, Intel i7-4770 3.40 GHz,32 GB RAM, 60W) and compared the performance 
+for different image resolutions.
+%with a Nvidia GeForce GTX590 GPU (1024 Cuda Cores, 3GB DDR5, 300 GBps, 365W). 
+Figure~\ref{fig:face_fps} shows a comparison of the two across different image sizes.
+As can be seen, performance deteriorates by more than 80\% when moving from VGA to an HD image on the CPU.
 Figure~\ref{fig:opencv_face_detection} shows the faces detected when the algorithm was run on an image 
 from the popular PASCAL Visual Object Classes (VOC) Challenge dataset~\cite{Everingham2010}.
 
@@ -71,17 +73,17 @@ from the popular PASCAL Visual Object Classes (VOC) Challenge dataset~\cite{Ever
     ymax = 40,
     xtick=data,
     %ytick=data,
-    symbolic x coords={0, 720x576, 1280x720, 1440x1080, 1920x1080, 5},
+    symbolic x coords={0, 640x480, 720x576, 1280x720, 1920x1080, 5},
     %nodes near coords,
     %nodes near coords align={vertical},
     ]
-\addplot [style={fill=rred}] coordinates {(720x576,9.43) (1280x720,4.54) (1440x1080,2.61) (1920x1080,1.99)};
-\addplot [style={fill=mygreen}] coordinates {(720x576,30) (1280x720,30) (1440x1080,30) (1920x1080,30)};
+\addplot [style={fill=rred}] coordinates {(640x480,11.76) (720x576,9.43) (1280x720,4.54) (1920x1080,1.99)};
+\addplot [style={fill=mygreen}] coordinates {(640x480,13) (720x576,7.4) (1280x720,3.16) (1920x1080,1.37)};
 \addplot [royalblue,line legend, sharp plot, update limits=false] coordinates {(0,30) (5,30)};
-\legend{CPU,GPU, Real-time}
+\legend{Face,Person, Real-time}
 \end{axis}
 \end{tikzpicture}
-\caption{Frames per second}
+\caption{Frames per second for face (red) and person (green) detections. Scale factor of 1.1 was used for face detection and 1.05 for person detection.}
 \label{fig:face_fps}
 \end{figure}
 
