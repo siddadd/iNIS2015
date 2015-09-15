@@ -1,15 +1,19 @@
 %Reliability
-Reliability is being explored at different layers of abstraction; from devices~\cite{Datta2014,Datta2015,Rahul2015} to memory~\cite{isca2014} to algorithms.
+Today, reliability is being explored at different layers of abstraction; from devices~\cite{Datta2014,Datta2015,Rahul2015} to memory~\cite{isca2014} to algorithms.
 At a circuit-level, ~\cite{chen2015fast} uses a conditional probability approach for modeling reliability in combinational circuits.
-
-\subsection{Introduction}
-In this section, we evaluate the capabilities of a popular visual object recognition algorithm - HMAX - and exploit the potential to save 
-power and reduce computational load.
+Approximate computing is being considered one of the potential pathways in reducing energy inefficienices in applications that can tolerate some amount of error.
+In ~\cite{temam2015}, the authors propose an inexact neural network accelerator with significant energy savings.
+In this section, we evaluate the capabilities of a bio-inspired visual object recognition algorithm - HMAX - and leverage its potential to save 
+power and reduce computational resources. HMAX while being computationally expensive is highly parallel and various accelerator designs have been proposed for 
+embedded real-time applications~\cite{Kestur2012, Maashri2012a}. 
 
 \subsection{HMAX}
-HMAX is a hierarchical visual object recognition model that has been used in various embedded real-time applications~\cite{Kestur2012, Maashri2012a}. 
-
-%HMAX Expt
+The first few hundreds milliseconds of visual processing in primate
+cortex follows a mostly feedforward hierarchy and in ~\cite{serre}, the authors proposed such a hierarchical visual object recognition model - HMAX - that consists of 
+four layers of alternating units of \textit{simple} \textbf{S} and \textit{complex} \textbf{C} units. This model was further refined in ~\cite{Mutch2008} where the inputs to 
+the second S layer i.e. ``S2'' are sparsified. For further insights, we point readers to ~\cite{poggio} where the claim made is 
+that a heirarchical MAX-like operation is a key mechanism for object recognition in the cortex.
+All our experiments in this work are based on \textit{hmin} - a publicly available representation of HMAX~\cite{hmin}.
 
 \subsection{Exploiting Resiliency for Power Benefits}
 
@@ -66,9 +70,9 @@ that having a data-dependent differential refresh scheme as proposed in ~\cite{i
 
 \subsection{Exploiting Reseliency for Compute Benefits}
 Image reconstruction is an important processing technique in image processing and computer vision applications. Most object recognition algorithms use a multi-scale 
-pyramid to make it scale invariant. For example, HMAX uses an image pyramid having 11 scales (including base scale) with a scale factor of $2^{1/4}$ and 
-uses a bicubic interpolation technique 
-to generate the image pyramid. The input image is passed through this image pyramid before computing the ``S1'' layer of HMAX. 
+pyramid to make it scale invariant. For example, HMAX uses an image pyramid having 11 scales (including base scale of size $256\times256$) with a 
+scale factor of $2^{1/4}$ and uses a bicubic interpolation technique 
+to generate the image pyramid. The input image is first converted to grayscale and then passed through this image pyramid before computing the ``S1'' layer of HMAX. 
 
 %Interpolation
 \begin{figure*}[!htb]
@@ -84,7 +88,6 @@ to generate the image pyramid. The input image is passed through this image pyra
 
 Many architectures have been proposed to support linear 
 and non-linear interpolation techniques~\cite{kesturdac}.
-
 Given a pixel $I(x,y)$, an interpolated pixel $I'(x',y')$ using bilinear interpolation is given by ~(\ref{eq:1}). By definition, 
 this involves computing two linear interpolation in $x$ and $y$ directions and requires eight multiplications. 
 Figure~\ref{tab:interpolation}(a) illustrates an interpolated pixel using four neighboring pixels.

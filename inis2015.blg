@@ -11,53 +11,55 @@ Database file #1: IEEEabrv.bib
 Database file #2: library.bib
 Warning--string name "http://opencv.org/" is undefined
 --line 4 of file library.bib
+Warning--string name "http://cbcl.mit.edu/jmutch/hmin/" is undefined
+--line 10 of file library.bib
 Warning--string name "http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/46?e" is undefined
---line 11 of file library.bib
+--line 17 of file library.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Bengio2009
 
 Done.
-You've used 43 entries,
+You've used 47 entries,
             4024 wiz_defined-function locations,
-            1450 strings with 22229 characters,
-and the built_in function-call counts, 27775 in all, are:
-= -- 2093
-> -- 626
-< -- 170
-+ -- 343
-- -- 115
-* -- 1280
-:= -- 4111
-add.period$ -- 88
-call.type$ -- 43
-change.case$ -- 42
-chr.to.int$ -- 411
-cite$ -- 44
-duplicate$ -- 2165
-empty$ -- 2628
-format.name$ -- 153
-if$ -- 6467
+            1471 strings with 22907 characters,
+and the built_in function-call counts, 31302 in all, are:
+= -- 2369
+> -- 710
+< -- 211
++ -- 391
+- -- 127
+* -- 1447
+:= -- 4600
+add.period$ -- 95
+call.type$ -- 47
+change.case$ -- 45
+chr.to.int$ -- 510
+cite$ -- 48
+duplicate$ -- 2405
+empty$ -- 2900
+format.name$ -- 168
+if$ -- 7295
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 396
-newline$ -- 152
-num.names$ -- 42
-pop$ -- 1028
+int.to.str$ -- 47
+missing$ -- 437
+newline$ -- 164
+num.names$ -- 46
+pop$ -- 1121
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2163
+skip$ -- 2435
 stack$ -- 0
-substring$ -- 1007
-swap$ -- 1538
-text.length$ -- 33
+substring$ -- 1233
+swap$ -- 1757
+text.length$ -- 41
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 43
+type$ -- 47
 warning$ -- 1
-while$ -- 104
-width$ -- 45
-write$ -- 393
-(There were 3 warnings)
+while$ -- 117
+width$ -- 49
+write$ -- 431
+(There were 4 warnings)
