@@ -21,24 +21,28 @@ So far we have surveyed the landscape of vision systems that enhance the
 performance and energy efficiency of the computational fabrics. 
 However, memory is an integral part of most systems today and contributes 
 between 10-30\% of the overall power of embedded video systems and 
-mobile phones~\cite{CarrollAaronHeiser2010}. With the growing demand for cloud storage, large DRAM devices are becoming ubiquitous today. The increasing memory 
-size has made DRAM memory refresh energy a matter of growing concern. 
-New power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus 
-Inversion have been introduced in new memory standards such as DDR4~\cite{jedec-sdram-standards}.  
+mobile phones~\cite{CarrollAaronHeiser2010}. With the growing demand for cloud storage, large DRAM devices are becoming ubiquitous today. 
+However data in every DRAM cell needs to be refreshed periodically to maintain integrity. This is done by reading a row and writing it back 
+from the sense amplifier. JEDEC standards~\cite{jedec-sdram-standards}  define a 64 ms refresh window in which a maximum of 8192 refresh commands are issued via an auto-refresh command by the memory controller. 
+The increasing memory size has made DRAM memory refresh energy a matter of growing concern and new 
+power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus 
+Inversion have been introduced in recent memory standards such as DDR4~\cite{jedec-sdram-standards}. Very recent work suggests a Flexible Auto-Refresh scheme to 
+skip unneeded refreshes~\cite{isca2015}.
 
 Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}.  
 Many recent works have looked at tackling the increasing refresh power in other 
 different ways~\cite{Liu2012, Stuecheli2010}. In ~\cite{Liu2011}, the 
-authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that in 
-real-time embedded vision applications, refresh power can dynamically be changed based on autonomously tagging data with logical labels.
+authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that 
+refresh power can dynamically be changed based on autonomously tagging data with logical labels.
 
 In this section, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAM-based memory storage.  
 As shown in Fig.~\ref{tab:hmax_reliability}(a), we choose six classes from the CalTech101 dataset~\cite{Fergus2004} 
 and obtain a recognition accuracy of around 78\%. Next we introduce salt and pepper noise into 128 pixels of each testing image 
 as shown in Fig.~\ref{tab:hmax_reliability}(b). This noise corresponds to 1024 cell failures in a 32GB DRAM device~\cite{Liu2012}. 
 We find that the accuracy drops by less than 1\%. 
-This implies that the refresh period can be increased from 64ms to 256ms for a 32GB DRAM device, thus helping in 
-reducing the refresh energy.
+Based on the cumulative cell failure probability curve provided in ~\cite{Liu2012}, this implies 
+that by increasing the refresh period from 64ms to 256ms we can expect up to 1000 cell failures in a 32GB DRAM device. Under these constraints, HMAX will 
+still maintain recognition rates within a 1\% error bound, thus helping in reducing the overall refresh energy.
 
 Fig.~\ref{fig:hmax_pixel_sensitivity} illustrates the classification accuracy of HMAX as a 
 function of the pixel errors introduced in each image.
@@ -54,7 +58,7 @@ that having a data-dependent differential refresh scheme as proposed in ~\cite{i
 \small (a) Baseline & \small (b) Noise
 \end{tabular}
 \vspace{1pt}
-\caption{HMAX resilience to errors. Six classes from CalTech101 were used.}
+\caption{HMAX resilience to errors. Six classes from CalTech101 were used. We use (a) as our baseline. Since HMAX operates only on grayscale image, we convert each image to grayscale (8 bits) before processing. In (b) we introduce salt and pepper noise in 128 pixels as shown.}
 \label{tab:hmax_reliability}
 \end{figure*}
 
@@ -64,7 +68,7 @@ that having a data-dependent differential refresh scheme as proposed in ~\cite{i
 \centering
 \includegraphics[width=0.99\linewidth,trim={20 20 30 20}, clip]{./figures/PixelSensitivityAnalysis.pdf}
 \vspace{0pt}
-\caption{HMAX resilience to errors. Six classes from CalTech101 were used.}\label{fig:hmax_pixel_sensitivity}
+\caption{HMAX resilience to errors. Six classes from CalTech101 were used. We observe a roll-off in accuracy beyond 512 pixels in error.}\label{fig:hmax_pixel_sensitivity}
 \vspace{0pt}
 \end{figure}
 

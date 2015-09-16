@@ -21,45 +21,45 @@ Warning--string name "http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/
 Warning--empty booktitle in Bengio2009
 
 Done.
-You've used 47 entries,
+You've used 48 entries,
             4024 wiz_defined-function locations,
-            1471 strings with 22907 characters,
-and the built_in function-call counts, 31302 in all, are:
-= -- 2369
-> -- 710
-< -- 211
-+ -- 391
-- -- 127
-* -- 1447
-:= -- 4600
-add.period$ -- 95
-call.type$ -- 47
-change.case$ -- 45
-chr.to.int$ -- 510
-cite$ -- 48
-duplicate$ -- 2405
-empty$ -- 2900
-format.name$ -- 168
-if$ -- 7295
+            1475 strings with 23162 characters,
+and the built_in function-call counts, 32493 in all, are:
+= -- 2458
+> -- 742
+< -- 227
++ -- 411
+- -- 131
+* -- 1504
+:= -- 4749
+add.period$ -- 96
+call.type$ -- 48
+change.case$ -- 46
+chr.to.int$ -- 555
+cite$ -- 49
+duplicate$ -- 2474
+empty$ -- 2996
+format.name$ -- 173
+if$ -- 7581
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 437
-newline$ -- 164
-num.names$ -- 46
-pop$ -- 1121
+int.to.str$ -- 48
+missing$ -- 447
+newline$ -- 167
+num.names$ -- 47
+pop$ -- 1146
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2435
+skip$ -- 2528
 stack$ -- 0
-substring$ -- 1233
-swap$ -- 1757
-text.length$ -- 41
+substring$ -- 1333
+swap$ -- 1824
+text.length$ -- 42
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 47
+type$ -- 48
 warning$ -- 1
-while$ -- 117
-width$ -- 49
-write$ -- 431
+while$ -- 124
+width$ -- 50
+write$ -- 440
 (There were 4 warnings)

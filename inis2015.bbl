@@ -27,8 +27,8 @@ D.~Marr, ``{Early Processing of Visual Information},'' \emph{Philosophical
   vol. 275, no. 942, pp. 483--519, 1976.
 
 \bibitem{Mutch2008}
-J.~Mutch and D.~G. Lowe, ``{Object class recognition and localization using
-  sparse features with limited receptive fields},'' \emph{IJCV}, 2008.
+J.~Mutch and D.~G. Lowe, ``{Object Class Recognition and Localization using
+  Sparse Features with Limited Receptive Fields},'' \emph{IJCV}, 2008.
 
 \bibitem{Bruce2006}
 N.~D.~B. Bruce and J.~K. Tsotsos, ``{Saliency Based on Information
@@ -54,9 +54,9 @@ S.~Furber, F.~Galluppi, S.~Temple, and L.~Plana, ``{The SpiNNaker Project},''
   \emph{Proceedings of the IEEE}, vol. 102, no.~5, pp. 652--665, May 2014.
 
 \bibitem{truenorth}
-A.~Cassidy \emph{et~al.}, ``Real-time scalable cortical computing at 46
-  giga-synaptic ops/watt with ~100x speedup in time-to-solution and ~100,000x
-  reduction in energy-to-solution,'' in \emph{High Performance Computing,
+A.~Cassidy \emph{et~al.}, ``{Real-Time Scalable Cortical Computing at 46
+  Giga-Synaptic OPS/Watt with ~100x Speedup in Time-to-Solution and ~100,000x
+  Reduction in Energy-to-Solution},'' in \emph{High Performance Computing,
   Networking, Storage and Analysis, SC14: International Conference for}, Nov
   2014, pp. 27--38.
 
@@ -76,8 +76,8 @@ S.~Kestur \emph{et~al.}, ``{Emulating Mammalian Vision on Reconfigurable
   Custom Computing Machines (FCCM)}, April 2012.
 
 \bibitem{hexagon}
-L.~Codrescu \emph{et~al.}, ``Hexagon dsp: An architecture optimized for mobile
-  multimedia and communications,'' \emph{Micro, IEEE}, vol.~34, no.~2, pp.
+L.~Codrescu \emph{et~al.}, ``{Hexagon DSP: An Architecture Optimized for Mobile
+  Multimedia and Communications},'' \emph{Micro, IEEE}, vol.~34, no.~2, pp.
   34--43, Mar 2014.
 
 \bibitem{micro2010}
@@ -107,9 +107,8 @@ A.~Suleiman and V.~Sze, ``{Energy-efficient HOG-based Object Detection at
   Processing Systems}, Oct 2014.
 
 \bibitem{Maashri2012a}
-A.~Maashri \emph{et~al.}, ``{Accelerating neuromorphic vision algorithms for
-  recognition},'' in \emph{DAC}.\hskip 1em plus 0.5em minus 0.4em\relax ACM
-  Press, 2012, p. 579.
+A.~Maashri \emph{et~al.}, ``{Accelerating Neuromorphic Vision Algorithms for
+  Recognition},'' in \emph{DAC}, 2012, pp. 579--584.
 
 \bibitem{Bae2011}
 S.~Bae \emph{et~al.}, ``{An FPGA Implementation of Information Theoretic
@@ -164,8 +163,8 @@ Y.~Chen \emph{et~al.}, ``{DaDianNao: A Machine-Learning Supercomputer},'' in
   \emph{MICRO}, Dec 2014, pp. 609--622.
 
 \bibitem{Datta2014}
-S.~Datta, H.~Liu, and V.~Narayanan, ``Tunnel {FET} technology: A reliability
-  perspective,'' \emph{Microelectronics Reliability}, vol.~54, no.~5, pp. 861
+S.~Datta, H.~Liu, and V.~Narayanan, ``{Tunnel {FET} Technology: A Reliability
+  Perspective},'' \emph{Microelectronics Reliability}, vol.~54, no.~5, pp. 861
   -- 874, 2014.
 
 \bibitem{Datta2015}
@@ -191,9 +190,9 @@ C.~Chen and R.~Xiao, ``{A Fast Model for Analysis and Improvement of Gate-Level
   Circuit Reliability},'' \emph{Integration, the VLSI Journal}, 2015.
 
 \bibitem{temam2015}
-Z.~Du, A.~Lingamneni, Y.~Chen, K.~Palem, O.~Temam, and C.~Wu, ``Leveraging the
-  error resilience of neural networks for designing highly energy efficient
-  accelerators,'' \emph{Computer-Aided Design of Integrated Circuits and
+Z.~Du, A.~Lingamneni, Y.~Chen, K.~Palem, O.~Temam, and C.~Wu, ``{Leveraging the
+  Error Resilience of Neural Networks for Designing Highly Energy Efficient
+  Accelerators},'' \emph{Computer-Aided Design of Integrated Circuits and
   Systems, IEEE Transactions on}, vol.~34, no.~8, pp. 1223--1235, Aug 2015.
 
 \bibitem{serre}
@@ -203,8 +202,8 @@ T.~Serre, L.~Wolf, and T.~Poggio, ``{Object Recognition with Features Inspired
   994--1000 vol. 2.
 
 \bibitem{poggio}
-M.~Riesenhuber and T.~Poggio, ``{Hierarchical models of object recognition in
-  cortex},'' \emph{Nature Neuroscience}, vol.~2, no.~11, pp. 1019--1025, 1999.
+M.~Riesenhuber and T.~Poggio, ``{Hierarchical Models of Object Recognition in
+  Cortex},'' \emph{Nature Neuroscience}, vol.~2, no.~11, pp. 1019--1025, 1999.
 
 \bibitem{hmin}
 J.~Mutch, \url{http://cbcl.mit.edu/jmutch/hmin/}.
@@ -216,9 +215,15 @@ A.~Carroll and G.~Heiser, ``{An Analysis of Power Consumption in a
 \bibitem{jedec-sdram-standards}
 ``{JEDEC DDR3 and DDR4 SDRAM Standard},'' 2012.
 
+\bibitem{isca2015}
+I.~Bhati, Z.~Chishti, S.-L. Lu, and B.~Jacob, ``{Flexible Auto-refresh:
+  Enabling Scalable and Energy-efficient DRAM Refresh Reductions},'' in
+  \emph{Proceedings of the 42Nd Annual International Symposium on Computer
+  Architecture}, 2015, pp. 235--246.
+
 \bibitem{islped98}
-T.~Ohsawa, K.~Kai, and K.~Murakami, ``Optimizing the dram refresh count for
-  merged {DRAM/logic LSIs},'' in \emph{ISLPED}, 1998.
+T.~Ohsawa, K.~Kai, and K.~Murakami, ``{Optimizing the DRAM Refresh Count for
+  Merged {DRAM/logic LSIs}},'' in \emph{ISLPED}, 1998.
 
 \bibitem{Liu2012}
 J.~Liu, B.~Jaiyen, R.~Veras, and O.~Mutlu, ``{RAIDR: Retention-Aware
