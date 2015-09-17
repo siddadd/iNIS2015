@@ -4,15 +4,17 @@ At a circuit-level, ~\cite{chen2015fast} uses a conditional probability approach
 Approximate computing is being considered one of the potential pathways in reducing energy inefficienices in applications that can tolerate some amount of error.
 In ~\cite{temam2015}, the authors propose an inexact neural network accelerator with significant energy savings.
 In this section, we evaluate the capabilities of a bio-inspired visual object recognition algorithm - HMAX - and leverage its potential to save 
-power and reduce computational resources. HMAX while being computationally expensive is highly parallel and various accelerator designs have been proposed for 
-embedded real-time applications~\cite{Kestur2012, Maashri2012a}. 
+power and reduce computational resources. 
 
 \subsection{HMAX}
 The first few hundreds milliseconds of visual processing in primate
-cortex follows a mostly feedforward hierarchy and in ~\cite{serre}, the authors proposed such a hierarchical visual object recognition model - HMAX - that consists of 
-four layers of alternating units of \textit{simple} \textbf{S} and \textit{complex} \textbf{C} units. This model was further refined in ~\cite{Mutch2008} where the inputs to 
+cortex mostly follows a feedforward hierarchy and in ~\cite{serre}, the authors proposed such a hierarchical visual object recognition model - HMAX - that consists of 
+four layers of alternating units of \textit{simple} \textbf{S} and \textit{complex} \textbf{C} units. 
+This model was further refined in ~\cite{Mutch2008} where the inputs to 
 the second S layer i.e. ``S2'' are sparsified. For further insights, we point readers to ~\cite{poggio} where the claim made is 
-that a heirarchical MAX-like operation is a key mechanism for object recognition in the cortex.
+that a hierarchical MAX-like operation is a key mechanism for object recognition in the cortex.
+HMAX while being computationally expensive is highly parallel and various accelerator designs have been proposed for 
+embedded real-time applications~\cite{Kestur2012, Maashri2012a}. 
 All our experiments in this work are based on \textit{hmin} - a publicly available representation of HMAX~\cite{hmin}.
 
 \subsection{Exploiting Resiliency for Power Benefits}
@@ -21,21 +23,25 @@ So far we have surveyed the landscape of vision systems that enhance the
 performance and energy efficiency of the computational fabrics. 
 However, memory is an integral part of most systems today and contributes 
 between 10-30\% of the overall power of embedded video systems and 
-mobile phones~\cite{CarrollAaronHeiser2010}. With the growing demand for cloud storage, large DRAM devices are becoming ubiquitous today. 
+mobile phones~\cite{CarrollAaronHeiser2010}. Propeilled by the growth in big data, the demand for cloud storage is allowing for larger DRAM devices to be used today. 
 However data in every DRAM cell needs to be refreshed periodically to maintain integrity. This is done by reading a row and writing it back 
-from the sense amplifier. JEDEC standards~\cite{jedec-sdram-standards}  define a 64 ms refresh window in which a maximum of 8192 refresh commands are issued via an auto-refresh command by the memory controller. 
+from the sense amplifier. JEDEC standards~\cite{jedec-sdram-standards} define a 64 ms refresh window in which a maximum of 8192 refresh commands are issued via an auto-refresh command by the memory controller. 
 The increasing memory size has made DRAM memory refresh energy a matter of growing concern and new 
 power-efficient techniques such as Low Power Auto Self Refresh, Temperature Controlled Refresh, Refresh Pausing, Fine Granularity Refresh and Data Bus 
-Inversion have been introduced in recent memory standards such as DDR4~\cite{jedec-sdram-standards}. Very recent work suggests a Flexible Auto-Refresh scheme to 
-skip unneeded refreshes~\cite{isca2015}.
+Inversion have been introduced in recent memory standards such as DDR4~\cite{jedec-sdram-standards}.
 
-Tuning DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}.  
-Many recent works have looked at tackling the increasing refresh power in other 
-different ways~\cite{Liu2012, Stuecheli2010}. In ~\cite{Liu2011}, the 
-authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that 
+Modulating DRAM refresh based on the data characteristics has been proposed as early as 1998~\cite{islped98}.  
+In ~\cite{Liu2011}, the authors looked at reducing refresh power on multimedia workloads. Recently, in ~\cite{iccd2014}, the authors showed that 
 refresh power can dynamically be changed based on autonomously tagging data with logical labels.
+Many recent works have looked at tackling the increasing refresh power in other 
+different ways. ~\cite{Liu2012} used software techniques while in ~\cite{Stuecheli2010}, scheduling 
+policies were proposed, and ~\cite{Nair2013} used a refresh pausing mechanism to
+exploit idle memory cycles.
+Very recent work suggests a Flexible Auto-Refresh scheme to 
+skip unneeded refreshes in DRAMs~\cite{isca2015}.
 
-In this section, we explore the resiliency of HMAX to bit errors that can then be used to choose the refresh rate for DRAM-based memory storage.  
+In this section, we showcase a data-dependent method to reduce refresh rates. 
+More specifically, we explore the resiliency of HMAX to bit errors, which can then be used to choose the refresh rate for DRAM-based memory storage.  
 As shown in Fig.~\ref{tab:hmax_reliability}(a), we choose six classes from the CalTech101 dataset~\cite{Fergus2004} 
 and obtain a recognition accuracy of around 78\%. Next we introduce salt and pepper noise into 128 pixels of each testing image 
 as shown in Fig.~\ref{tab:hmax_reliability}(b). This noise corresponds to 1024 cell failures in a 32GB DRAM device~\cite{Liu2012}. 
@@ -72,7 +78,7 @@ that having a data-dependent differential refresh scheme as proposed in ~\cite{i
 \vspace{0pt}
 \end{figure}
 
-\subsection{Exploiting Reseliency for Compute Benefits}
+\subsection{Exploiting Resiliency for Compute Benefits}
 Image reconstruction is an important processing technique in image processing and computer vision applications. Most object recognition algorithms use a multi-scale 
 pyramid to make it scale invariant. For example, HMAX uses an image pyramid having 11 scales (including base scale of size $256\times256$) with a 
 scale factor of $2^{1/4}$ and uses a bicubic interpolation technique 
@@ -86,7 +92,7 @@ to generate the image pyramid. The input image is first converted to grayscale a
 \small (a) Bilinear Interpolation & \small (b) Bicubic Interpolation
 \end{tabular}
 \vspace{1pt}
-\caption{Interpolation techniques. In (a), four while in (b), 16 neighboring pixels are used for interpolation.}
+\caption{Interpolation techniques. In (a), four while in (b), 16 neighboring pixels are used for interpolating the value of the pixel at (x',y').}
 \label{tab:interpolation}
 \end{figure*}
 
@@ -94,7 +100,7 @@ Many architectures have been proposed to support linear
 and non-linear interpolation techniques~\cite{kesturdac}.
 Given a pixel $I(x,y)$, an interpolated pixel $I'(x',y')$ using bilinear interpolation is given by ~(\ref{eq:1}). By definition, 
 this involves computing two linear interpolation in $x$ and $y$ directions and requires eight multiplications. 
-Figure~\ref{tab:interpolation}(a) illustrates an interpolated pixel using four neighboring pixels.
+Fig.~\ref{tab:interpolation}(a) illustrates an interpolated pixel using four neighboring pixels.
 
 \begin{equation}
 \begin{split}
@@ -107,20 +113,22 @@ I'(x',y') = &I(x,y) \times (1-\Delta x) \times (1-\Delta y) +\\
 \end{equation}
 
 Using bicubic interpolation, the same interpolated pixel $I'(x',y')$ is given by ~(\ref{eq:2}) where 
-$R_c$ denotes a bicubic interpolation function. The computation requires 56 multiplications in all and Figure~\ref{tab:interpolation}(b) shows the interpolated pixel 
+$R_c$ denotes a bicubic interpolation function. The computation requires 56 multiplications in all and Fig.~\ref{tab:interpolation}(b) shows the interpolated pixel 
 using sixteen neighboring pixels.
 
+{\setstretch{0.25}
 \begin{equation}
-\begin{split}
+%\begin{split}
 I'(x',y')=\sum_{m=-1}^{2}\sum_{n=-1}^{2}I(x+m,y+n)R_c(m-\Delta x)R_c(-(n-\Delta y))
-\end{split}
+%\end{split}
 \label{eq:2}
 \end{equation}
+}
 
 In this section we explore the potential savings in computational work needed to be done while not compromising on accuracy. 
 In the embedded version, compute resources are very costly. Saving a few resources can result in being able to 
 fit a design in a particular form-factor or may cause the design to overflow into the next larger generation of devices. We explored the 
-capablity of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. We used all 101 classes of CalTech101 
+capability of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. We used all 101 classes of CalTech101 
 for this purpose. It should be noted that using the original bicubic interpolation technique, we achieve 54\% accuracy on the said dataset. This is in confirmation with the results shown in ~\cite{Mutch2008}. 
 We then ran the experiment using bilinear interpolation and found the impact of this is a 1\% loss in accuracy. Also, instead of 
 56 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 

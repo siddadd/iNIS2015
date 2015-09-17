@@ -215,24 +215,9 @@ A.~Carroll and G.~Heiser, ``{An Analysis of Power Consumption in a
 \bibitem{jedec-sdram-standards}
 ``{JEDEC DDR3 and DDR4 SDRAM Standard},'' 2012.
 
-\bibitem{isca2015}
-I.~Bhati, Z.~Chishti, S.-L. Lu, and B.~Jacob, ``{Flexible Auto-refresh:
-  Enabling Scalable and Energy-efficient DRAM Refresh Reductions},'' in
-  \emph{Proceedings of the 42Nd Annual International Symposium on Computer
-  Architecture}, 2015, pp. 235--246.
-
 \bibitem{islped98}
 T.~Ohsawa, K.~Kai, and K.~Murakami, ``{Optimizing the DRAM Refresh Count for
   Merged {DRAM/logic LSIs}},'' in \emph{ISLPED}, 1998.
-
-\bibitem{Liu2012}
-J.~Liu, B.~Jaiyen, R.~Veras, and O.~Mutlu, ``{RAIDR: Retention-Aware
-  Intelligent DRAM Refresh},'' in \emph{ISCA}, 2012.
-
-\bibitem{Stuecheli2010}
-J.~Stuecheli, D.~Kaseridis, H.~Hunter, and L.~John, ``{Elastic Refresh:
-  Techniques to Mitigate Refresh Penalties in High Density Memory},'' in
-  \emph{MICRO}, 2010.
 
 \bibitem{Liu2011}
 S.~Liu, {Pattabiraman K.}, T.~Moscibroda, and B.~Zorn, ``{Flikker: Saving DRAM
@@ -243,6 +228,25 @@ S.~Advani \emph{et~al.}, ``{Refresh Enabled Video Analytics (REVA):
   Implications on Power and Performance of DRAM Supported Embedded Visual
   Systems},'' in \emph{Computer Design (ICCD), 2014 32nd IEEE International
   Conference on}, Oct 2014, pp. 501--504.
+
+\bibitem{Liu2012}
+J.~Liu, B.~Jaiyen, R.~Veras, and O.~Mutlu, ``{RAIDR: Retention-Aware
+  Intelligent DRAM Refresh},'' in \emph{ISCA}, 2012.
+
+\bibitem{Stuecheli2010}
+J.~Stuecheli, D.~Kaseridis, H.~Hunter, and L.~John, ``{Elastic Refresh:
+  Techniques to Mitigate Refresh Penalties in High Density Memory},'' in
+  \emph{MICRO}, 2010.
+
+\bibitem{Nair2013}
+P.~Nair, C.~Chou, and M.~Qureshi, ``{A case for Refresh Pausing in DRAM memory
+  systems},'' in \emph{HPCA}, 2013.
+
+\bibitem{isca2015}
+I.~Bhati, Z.~Chishti, S.-L. Lu, and B.~Jacob, ``{Flexible Auto-refresh:
+  Enabling Scalable and Energy-efficient DRAM Refresh Reductions},'' in
+  \emph{Proceedings of the 42Nd Annual International Symposium on Computer
+  Architecture}, 2015, pp. 235--246.
 
 \bibitem{Fergus2004}
 R.~Fergus and P.~Perona, ``{Learning Generative Visual Models from Few Training
