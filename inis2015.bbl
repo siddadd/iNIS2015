@@ -60,20 +60,13 @@ A.~Cassidy \emph{et~al.}, ``{Real-Time Scalable Cortical Computing at 46
   Networking, Storage and Analysis, SC14: International Conference for}, Nov
   2014, pp. 27--38.
 
-\bibitem{Nere2011}
-A.~Nere, A.~Hashmi, and M.~Lipasti, ``{Profiling Heterogeneous Multi-GPU
-  Systems to Accelerate Cortically Inspired Learning Algorithms},'' in
-  \emph{IPDPS}, 2011.
+\bibitem{OpenCV}
+OpenCV, \url{http://opencv.org/}.
 
-\bibitem{Chen2014}
-T.~Chen, J.~Wang, Y.~Chen, and O.~Temam, ``{DianNao : A Small-Footprint
-  High-Throughput Accelerator for Ubiquitous Machine-Learning},'' in
-  \emph{ASPLOS}, 2014.
-
-\bibitem{Kestur2012}
-S.~Kestur \emph{et~al.}, ``{Emulating Mammalian Vision on Reconfigurable
-  Hardware},'' in \emph{IEEE International Symposium on Field-Programmable
-  Custom Computing Machines (FCCM)}, April 2012.
+\bibitem{Everingham2010}
+M.~Everingham, L.~Van~Gool, C.~K.~I. Williams, J.~Winn, and A.~Zisserman,
+  ``{The Pascal Visual Object Classes (VOC) Challenge},'' \emph{International
+  Journal of Computer Vision}, June 2010.
 
 \bibitem{hexagon}
 L.~Codrescu \emph{et~al.}, ``{Hexagon DSP: An Architecture Optimized for Mobile
@@ -94,6 +87,16 @@ R.~Iyer \emph{et~al.}, ``{CogniServe: Heterogeneous Server Architecture for
 N.~Chandramoorthy \emph{et~al.}, ``{Exploring Architectural Heterogeneity in
   Intelligent Vision Systems},'' in \emph{International Symposium on High
   Performance Computer Architecture (HPCA)}, Feb 2015.
+
+\bibitem{Nere2011}
+A.~Nere, A.~Hashmi, and M.~Lipasti, ``{Profiling Heterogeneous Multi-GPU
+  Systems to Accelerate Cortically Inspired Learning Algorithms},'' in
+  \emph{IPDPS}, 2011.
+
+\bibitem{Kestur2011}
+S.~Kestur, D.~Dantara, and V.~Narayanan, ``{SHARC : A Streaming Model for FPGA
+  Accelerators and its Application to Saliency},'' in \emph{Design, Automation,
+  and Test in Europe}, 2011.
 
 \bibitem{violafccm}
 D.~Hefenbrock, J.~Oberg, N.~Thanh, R.~Kastner, and S.~Baden, ``{Accelerating
@@ -120,14 +123,6 @@ A.~Mahesri, D.~Johnson, N.~Crago, and S.~Patel, ``{Tradeoffs in Designing
   Accelerator Architectures for Visual Computing},'' in
   \emph{Microarchitecture, 2008. MICRO-41. 2008 41st IEEE/ACM International
   Symposium on}, Nov 2008, pp. 164--175.
-
-\bibitem{OpenCV}
-OpenCV, \url{http://opencv.org/}.
-
-\bibitem{Everingham2010}
-M.~Everingham, L.~Van~Gool, C.~K.~I. Williams, J.~Winn, and A.~Zisserman,
-  ``{The Pascal Visual Object Classes (VOC) Challenge},'' \emph{International
-  Journal of Computer Vision}, June 2010.
 
 \bibitem{giles1997}
 S.~Lawrence, C.~Giles, and A.~C. Tsoi, ``{Convolutional Neural Networks for
@@ -158,36 +153,29 @@ C.~Farabet, C.~Poulet, J.~Han, and Y.~LeCun, ``{CNP: An FPGA-based processor
   for Convolutional Networks},'' in \emph{International Conference on Field
   Programmable Logic and Applications (FPL)}, Aug 2009.
 
+\bibitem{ISCA2010}
+S.~T. Chakradhar, M.~Sankaradass, V.~Jakkula, and S.~Cadambi, ``{A Dynamically
+  Configurable Coprocessor for Convolutional Neural Networks},'' in
+  \emph{ISCA}, 2010, pp. 247--257.
+
+\bibitem{Chen2014}
+T.~Chen, J.~Wang, Y.~Chen, and O.~Temam, ``{DianNao : A Small-Footprint
+  High-Throughput Accelerator for Ubiquitous Machine-Learning},'' in
+  \emph{ASPLOS}, 2014.
+
 \bibitem{DaDianNao}
 Y.~Chen \emph{et~al.}, ``{DaDianNao: A Machine-Learning Supercomputer},'' in
   \emph{MICRO}, Dec 2014, pp. 609--622.
 
-\bibitem{Datta2014}
-S.~Datta, H.~Liu, and V.~Narayanan, ``{Tunnel {FET} Technology: A Reliability
-  Perspective},'' \emph{Microelectronics Reliability}, vol.~54, no.~5, pp. 861
-  -- 874, 2014.
-
-\bibitem{Datta2015}
-N.~Agrawal, H.~Liu, R.~Arghavani, V.~Narayanan, and S.~Datta, ``{Impact of
-  Variation in Nanoscale Silicon and Non-Silicon FinFETs and Tunnel FETs on
-  Device and SRAM Performance},'' \emph{Electron Devices, IEEE Transactions
-  on}, vol.~62, no.~6, pp. 1691--1697, June 2015.
-
-\bibitem{Rahul2015}
-R.~Pandey \emph{et~al.}, ``{Tunnel Junction Abruptness, Source Random Dopant
-  Fluctuation and PBTI Induced Variability Analysis of
-  GaAs$_{0.4}$Sb$_{0.6}$/In$_{0.65}$Ga$_{0.35}$As Heterojunction Tunnel
-  FETs},'' \emph{IEEE International Electron Devices Meeting}, (Accepted) 2015.
-
-\bibitem{isca2014}
-L.~Chen and Z.~Zhang, ``{MemGuard: A low cost and energy efficient design to
-  support and enhance memory system reliability},'' in \emph{Computer
-  Architecture (ISCA), 2014 ACM/IEEE 41st International Symposium on}, June
-  2014, pp. 49--60.
-
 \bibitem{chen2015fast}
 C.~Chen and R.~Xiao, ``{A Fast Model for Analysis and Improvement of Gate-Level
   Circuit Reliability},'' \emph{Integration, the VLSI Journal}, 2015.
+
+\bibitem{chippa}
+V.~Chippa, D.~Mohapatra, A.~Raghunathan, K.~Roy, and S.~Chakradhar, ``{Scalable
+  Effort Hardware Design: Exploiting Algorithmic Resilience for Energy
+  Efficiency},'' in \emph{Design Automation Conference (DAC), 2010 47th
+  ACM/IEEE}, June 2010, pp. 555--560.
 
 \bibitem{temam2015}
 Z.~Du, A.~Lingamneni, Y.~Chen, K.~Palem, O.~Temam, and C.~Wu, ``{Leveraging the
@@ -204,6 +192,11 @@ T.~Serre, L.~Wolf, and T.~Poggio, ``{Object Recognition with Features Inspired
 \bibitem{poggio}
 M.~Riesenhuber and T.~Poggio, ``{Hierarchical Models of Object Recognition in
   Cortex},'' \emph{Nature Neuroscience}, vol.~2, no.~11, pp. 1019--1025, 1999.
+
+\bibitem{Kestur2012}
+S.~Kestur \emph{et~al.}, ``{Emulating Mammalian Vision on Reconfigurable
+  Hardware},'' in \emph{IEEE International Symposium on Field-Programmable
+  Custom Computing Machines (FCCM)}, April 2012.
 
 \bibitem{hmin}
 J.~Mutch, \url{http://cbcl.mit.edu/jmutch/hmin/}.
