@@ -1,13 +1,12 @@
 With increasing image resolutions, achieving real-time performance for vision applications is becoming exceedingly difficult. 
-As an example, we ran the multi-threaded Haar face detection algorithm from the latest 
-stable release of OpenCV (2.4.11)~\cite{OpenCV} using 
+As an example, we ran the multi-threaded face detection and person detection algorithms from the latest stable release of OpenCV (2.4.11)~\cite{OpenCV} using 
 a general purpose CPU (8 Core, Intel i7-4770 3.40 GHz,32 GB RAM, 60W) and compared the performance 
 for different image resolutions.
 %with a Nvidia GeForce GTX590 GPU (1024 Cuda Cores, 3GB DDR5, 300 GBps, 365W). 
 Fig.~\ref{fig:face_fps} shows the detection time in terms of frames per second  for different image sizes ranging from VGA ($640\times480$) 
 to HD ($1920\times1080$).
 As can be seen, performance deteriorates by more than 80\% when moving from VGA to an HD image on the CPU.
-Fig.~\ref{fig:opencv_face_detection} shows the faces detected when the algorithm was run on an image 
+Fig.~\ref{fig:opencv_face_detection} shows the faces detected when the face detection algorithm was run on an image 
 from the popular PASCAL Visual Object Classes (VOC) Challenge dataset~\cite{Everingham2010}.
 
 \begin{figure}[!htb]
