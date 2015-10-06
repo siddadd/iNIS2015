@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  21 SEP 2015 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.16)  5 OCT 2015 23:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -823,11 +823,11 @@ File: ./figures/vision_apps_devices.png Graphic file (type png)
 Package pdftex.def Info: ./figures/vision_apps_devices.png used on input line 2
 5.
 (pdftex.def)             Requested size: 227.74333pt x 115.06554pt.
- [1{/home/mdl/ska130/Research/Tools/texlive/2015/texmf-var/fonts/map/pdftex/upd
-map/pdftex.map}
+) [1{/home/mdl/ska130/Research/Tools/texlive/2015/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map}
 
 
- <./figures/vision_apps_devices.png>]) (./src/related.tex
+ <./figures/vision_apps_devices.png>] (./src/related.tex
 ===== Image 'figures/face_fps' is up-to-date. ======
 <./figures/facedetected.jpg, id=18, 501.875pt x 381.425pt>
 File: ./figures/facedetected.jpg Graphic file (type jpg)
@@ -891,8 +891,12 @@ m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n \OMS/cmsy/m/n/1
 0 ^^@ \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 ))
  []
 
-) (./src/conclusion.tex) [4 <./figures/PixelSensitivityAnalysis.pdf> <./figures
-/hmax_reliability_a.png> <./figures/hmax_reliability_b.png>]
+
+Underfull \vbox (badness 3735) has occurred while \output is active []
+
+)
+(./src/conclusion.tex) [4 <./figures/PixelSensitivityAnalysis.pdf> <./figures/h
+max_reliability_a.png> <./figures/hmax_reliability_b.png>]
 (./src/acknowledgements.tex) (./inis2015.bbl
 Underfull \hbox (badness 1629) in paragraph at lines 117--120
 \OT1/ptm/m/it/8 Sym-po-sium on Field-Programmable Cus-tom Com-put-ing Ma-chines
@@ -949,7 +953,7 @@ mes/utmb8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></home/mdl/ska130/Research/Tools/texlive/2015/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></home/mdl/ska130/Research/Tools/texlive/
 2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on inis2015.pdf (6 pages, 1469227 bytes).
+Output written on inis2015.pdf (6 pages, 1469190 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
