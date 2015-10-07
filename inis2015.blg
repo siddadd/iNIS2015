@@ -19,47 +19,48 @@ Warning--string name "http://issuu.com/xcelljournal/docs/xcell_journal_issue_92/
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Bengio2009
+Warning--empty booktitle in IPHandbook
 
 Done.
-You've used 48 entries,
+You've used 50 entries,
             4024 wiz_defined-function locations,
-            1471 strings with 22979 characters,
-and the built_in function-call counts, 32129 in all, are:
-= -- 2397
-> -- 746
-< -- 213
-+ -- 411
-- -- 134
-* -- 1481
-:= -- 4674
-add.period$ -- 96
-call.type$ -- 48
-change.case$ -- 46
-chr.to.int$ -- 528
-cite$ -- 49
-duplicate$ -- 2454
-empty$ -- 3026
-format.name$ -- 176
-if$ -- 7508
+            1484 strings with 23201 characters,
+and the built_in function-call counts, 33411 in all, are:
+= -- 2501
+> -- 763
+< -- 225
++ -- 423
+- -- 136
+* -- 1537
+:= -- 4872
+add.period$ -- 101
+call.type$ -- 50
+change.case$ -- 48
+chr.to.int$ -- 555
+cite$ -- 52
+duplicate$ -- 2552
+empty$ -- 3141
+format.name$ -- 178
+if$ -- 7805
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 451
-newline$ -- 167
-num.names$ -- 47
-pop$ -- 1180
+int.to.str$ -- 50
+missing$ -- 465
+newline$ -- 173
+num.names$ -- 49
+pop$ -- 1211
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2505
+skip$ -- 2608
 stack$ -- 0
-substring$ -- 1270
-swap$ -- 1774
-text.length$ -- 37
+substring$ -- 1335
+swap$ -- 1850
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 48
-warning$ -- 1
-while$ -- 121
-width$ -- 50
-write$ -- 435
-(There were 4 warnings)
+type$ -- 50
+warning$ -- 2
+while$ -- 126
+width$ -- 52
+write$ -- 453
+(There were 5 warnings)

@@ -254,4 +254,13 @@ S.~Kestur, K.~Irick, S.~Park, A.~Al~Maashri, V.~Narayanan, and C.~Chakrabarti,
   using FPGAs},'' in \emph{Design Automation Conference (DAC), 2011 48th
   ACM/EDAC/IEEE}, June 2011, pp. 585--590.
 
+\bibitem{IPHandbook}
+J.~Russ, ``{The Image Processing Handbook}.''\hskip 1em plus 0.5em minus
+  0.4em\relax CRC Press, 2011.
+
+\bibitem{Keys}
+R.~Keys, ``{Cubic Convolution Interpolation for Digital Image Processing},''
+  \emph{Acoustics, Speech and Signal Processing, IEEE Transactions on},
+  vol.~29, no.~6, pp. 1153--1160, Dec 1981.
+
 \end{thebibliography}

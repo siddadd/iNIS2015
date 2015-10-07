@@ -99,13 +99,15 @@ to generate the image pyramid. The input image is first converted to grayscale a
 
 Many architectures have been proposed to support linear 
 and non-linear interpolation techniques~\cite{kesturdac}.
-Given a pixel $I(x,y)$, an interpolated pixel $I'(x',y')$ using bilinear interpolation is given by ~(\ref{eq:1}). By definition, 
-this involves computing two linear interpolation in $x$ and $y$ directions and requires eight multiplications. 
+Given a pixel at $(x,y)$ with intensity $I(x,y)$, an interpolated pixel at $(x',y')$ at an offset of $(\Delta x, \Delta y)$ from $(x,y)$
+(where $0<\Delta x<1, 0<\Delta y<1$) can be computed using bilinear interpolation.
+By definition, this involves computing two linear interpolations in the $x$ direction and one linear interpolation in the $y$ direction~\cite{IPHandbook}. 
+This process, derived from first principles, is shown in ~(\ref{eq:1}) and requires eight multiplications. 
 Fig.~\ref{tab:interpolation}(a) illustrates an interpolated pixel using four neighboring pixels.
 
 \begin{equation}
 \begin{split}
-I'(x',y') = &I(x,y) \times (1-\Delta x) \times (1-\Delta y) +\\ 
+I(x',y') = &I(x,y) \times (1-\Delta x) \times (1-\Delta y) +\\ 
             &I(x+1,y) \times\Delta x \times (1-\Delta y) +\\ 
             &I(x,y+1) \times (1-\Delta x) \times\Delta y +\\ 
             &I(x+1,y+1) \times\Delta x \times\Delta y 
@@ -113,14 +115,14 @@ I'(x',y') = &I(x,y) \times (1-\Delta x) \times (1-\Delta y) +\\
 \label{eq:1}
 \end{equation}
 
-Using bicubic interpolation, the same interpolated pixel $I'(x',y')$ is given by ~(\ref{eq:2}) where 
-$R_c$ denotes a bicubic interpolation function. The computation requires 56 multiplications in all and Fig.~\ref{tab:interpolation}(b) shows the interpolated pixel 
+Using bicubic interpolation, the same interpolated pixel $I(x',y')$ is given by ~(\ref{eq:2}) where 
+$R_c$ denotes a bicubic interpolation function~\cite{Keys}. The computation requires 56 multiplications in all and Fig.~\ref{tab:interpolation}(b) shows the interpolated pixel 
 using sixteen neighboring pixels.
 
 {\setstretch{0.25}
 \begin{equation}
 %\begin{split}
-I'(x',y')=\sum_{m=-1}^{2}\sum_{n=-1}^{2}I(x+m,y+n)R_c(m-\Delta x)R_c(-(n-\Delta y))
+I(x',y')=\sum_{m=-1}^{2}\sum_{n=-1}^{2}I(x+m,y+n)R_c(m-\Delta x)R_c(-(n-\Delta y))
 %\end{split}
 \label{eq:2}
 \end{equation}
