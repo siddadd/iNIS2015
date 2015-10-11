@@ -73,13 +73,17 @@ that having a data-dependent differential refresh scheme as proposed in ~\cite{i
 \begin{figure}[htb!]
 \vspace{0pt}
 \centering
-\includegraphics[width=0.99\linewidth,trim={20 20 30 20}, clip]{./figures/PixelSensitivityAnalysis.pdf}
+\includegraphics[width=1\linewidth,trim={20 20 30 20}, clip]{./figures/PixelSensitivityAnalysis.pdf}
 \vspace{0pt}
 \caption{HMAX resilience to errors. Six classes from CalTech101 were used. We observe a roll-off in accuracy beyond 512 pixels in error.}\label{fig:hmax_pixel_sensitivity}
 \vspace{0pt}
 \end{figure}
 
 \subsection{Exploiting Resiliency for Compute Benefits}
+In this section we explore the potential savings in computational work needed to be done while not compromising on accuracy. 
+In embedded systems, compute resources come at a cost. Saving a few resources can enable 
+fitting a design in a particular form-factor or may cause the design to overflow into the next larger generation of devices. 
+
 Image reconstruction is an important processing technique in image processing and computer vision applications. Most object recognition algorithms use a multi-scale 
 pyramid to make it scale invariant. For example, HMAX uses an image pyramid having 11 scales (including base scale of size $256\times256$) with a 
 scale factor of $2^{1/4}$ and uses a bicubic interpolation technique 
@@ -100,7 +104,7 @@ to generate the image pyramid. The input image is first converted to grayscale a
 Many architectures have been proposed to support linear 
 and non-linear interpolation techniques~\cite{kesturdac}.
 Given a pixel at $(x,y)$ with intensity $I(x,y)$, an interpolated pixel at $(x',y')$ at an offset of $(\Delta x, \Delta y)$ from $(x,y)$
-(where $0<\Delta x<1, 0<\Delta y<1$) can be computed using bilinear interpolation.
+(where $0<\Delta x,\Delta y<1$) can be computed using bilinear interpolation.
 By definition, this involves computing two linear interpolations in the $x$ direction and one linear interpolation in the $y$ direction~\cite{IPHandbook}. 
 This process, derived from first principles, is shown in ~(\ref{eq:1}) and requires eight multiplications. 
 Fig.~\ref{tab:interpolation}(a) illustrates an interpolated pixel using four neighboring pixels.
@@ -116,8 +120,8 @@ I(x',y') = &I(x,y) \times (1-\Delta x) \times (1-\Delta y) +\\
 \end{equation}
 
 Using bicubic interpolation, the same interpolated pixel $I(x',y')$ is given by ~(\ref{eq:2}) where 
-$R_c$ denotes a bicubic interpolation function~\cite{Keys}. The computation requires 56 multiplications in all and Fig.~\ref{tab:interpolation}(b) shows the interpolated pixel 
-using sixteen neighboring pixels.
+$R_c$ denotes a bicubic interpolation function~\cite{Keys}. The computation requires 56\footnote{Further optimizations are possible using shift and add operators but this would still require signficantly more multipliers than the bilinear version.} multiplications in all and Fig.~\ref{tab:interpolation}(b) shows the interpolated pixel 
+using 16 neighboring pixels.
 
 {\setstretch{0.25}
 \begin{equation}
@@ -128,14 +132,11 @@ I(x',y')=\sum_{m=-1}^{2}\sum_{n=-1}^{2}I(x+m,y+n)R_c(m-\Delta x)R_c(-(n-\Delta y
 \end{equation}
 }
 
-In this section we explore the potential savings in computational work needed to be done while not compromising on accuracy. 
-In the embedded version, compute resources are very costly. Saving a few resources can result in being able to 
-fit a design in a particular form-factor or may cause the design to overflow into the next larger generation of devices. We explored the 
-capability of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. We used all 101 classes of CalTech101 
+We explored the capability of HMAX to correctly recognize objects using bilinear interpolation in the image pyramid. We used all 101 classes of CalTech101 
 for this purpose. It should be noted that using the original bicubic interpolation technique, we achieve 54\% accuracy on the said dataset. This is in confirmation with the results shown in ~\cite{Mutch2008}. 
-We then ran the experiment using bilinear interpolation and found the impact of this is a 1\% loss in accuracy. Also, instead of 
-56 multipliers (bicubic interpolation), we would need just eight multipliers (bilinear interpolation). Table~\ref{table:compute} shows the 
-results and the savings have a significant impact on area and performance of the accelerated system. 
+We then ran the experiment using bilinear interpolation and found the impact of this is a 1\% loss in accuracy. Thus, if the image pyramid is implemented 
+using bilinear interpolation, we would need eight multipliers instead of 
+56 multipliers. We tabulate our results in Table~\ref{table:compute}. These savings have a significant impact on area and performance of the accelerated system. 
 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
